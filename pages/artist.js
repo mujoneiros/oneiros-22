@@ -34,7 +34,10 @@ export default function artist() {
       <main className="w-2/3 h-full float-right flex flex-col items-center">
         <div className="mt-40 ">
           {artists.map((artist, _i) => (
-            <div className=" h-96 w-[45vw] ml-10 bg-white mb-28 col-span-3 place-self-center flex flex-col items-center border-2 border-black shadow-2xl">
+            <div
+              key={_i}
+              className=" h-96 w-[45vw] ml-10 bg-white mb-28 col-span-3 place-self-center flex flex-col items-center border-2 border-black shadow-2xl"
+            >
               <div className="relative h-40 w-40 rounded-full z-10 -translate-y-20">
                 <Image
                   src={artist.image}
