@@ -41,7 +41,7 @@ export default function Home() {
         <div className="h-screen flex flex-col items-center">
           <div className="max-w-4xl flex flex-col items-center gap-10">
             <h2 className="text-6xl max-w-xl font-serif pb-6 decoration-white decoration-4 underline">
-              What is Oneiros'22
+              What is Oneiros&apos;22
             </h2>
             <p className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid,
