@@ -171,7 +171,12 @@ export default function sponsors() {
         {sponsors.map((sponsor, _i) => (
           <div key={_i} className="flex justify-center items-center">
             <div className="rounded-full h-40 w-40 relative hover:bg-primaryWhite hover:transition ease-in-out delay-150 ">
-              <Image src={sponsor.image} layout="fill" objectFit="contain" />
+              <Image
+                src={sponsor.image}
+                layout="fill"
+                objectFit="contain"
+                alt="sponsor image"
+              />
             </div>
           </div>
         ))}

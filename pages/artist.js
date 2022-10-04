@@ -44,6 +44,7 @@ export default function artist() {
                   layout="fill"
                   objectFit="cover"
                   className=" rounded-full "
+                  alt="artist image"
                 />
               </div>
               <h2 className="text-2xl -translate-y-10 text-blue-600 font-medium">
