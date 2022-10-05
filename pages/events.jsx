@@ -11,7 +11,7 @@ export default function Events() {
   return (
     <div>
       <Header />
-      <nav className="fixed h-full w-1/3 text-black font-Montserrat text-center shadow-sm shadow-primaryWhite bg-secondaryWhite">
+      <nav className="fixed h-full w-1/4 text-black font-Montserrat text-center shadow-sm shadow-primaryWhite bg-secondaryWhite">
         <h1 className="text-6xl pt-40 font-extrabold ">EVENTS</h1>
         <ul className="mt-12 flex flex-col items-center cursor-pointer">
           {/* <h2 className="font-bold text-3xl" onClick={() => setMajor(!major)}>
@@ -72,10 +72,10 @@ export default function Events() {
           </ul>
         </ul>
       </nav>
-      <main className="w-2/3 grid grid-cols-3 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
+      <main className="w-3/4 grid grid-cols-4 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
         {minorevents.payload.map((minorevent, _i) => (
           <>
-            <div className="text-5xl col-span-3 place-self-center font-Montserrat uppercase font-semibold">
+            <div className="text-4xl col-span-4 place-self-start font-Montserrat uppercase font-semibold ml-8">
               {minorevent.name}
             </div>
 
@@ -89,7 +89,7 @@ export default function Events() {
                     className="absolute group-hover:brightness-50 duration-75 ease-in"
                   />
                   {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
-                  <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade">
+                  <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                     <span className="capitalize text-base">
                       {eventname.eventName}
                     </span>

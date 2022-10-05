@@ -22,6 +22,7 @@ module.exports = {
       },
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
+        Jost: ['Jost', 'sans-serif'],
       },
       animation: {
         fade: 'fade ease-in-out 0.5s',
