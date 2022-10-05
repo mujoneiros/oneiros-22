@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import jubin from '../assets/images/artists/jubin.jpg';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
 
-export default function artist() {
+export default function Artist() {
   const artists = [
     {
       name: 'Jubin Nautiyal',

@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function teams() {
+export default function Teams() {
   return <div>teams</div>;
 }
