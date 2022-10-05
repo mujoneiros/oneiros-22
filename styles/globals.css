@@ -10,6 +10,16 @@ body {
   padding: 0;
 }
 
+#bg-landing {
+  background-image: url('../assets/images/bg-landing-ono.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

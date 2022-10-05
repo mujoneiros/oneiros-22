@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import oneirosLogo from '../assets/images/OneirosLogo.png';
-import onoLogo from '../assets/images/onoLogo.png';
+import onoLogo from '../assets/images/onoLogo.jpg';
 
 export default function Header() {
   // const navItems = [{ name: 'Events', link: '/events' }];
