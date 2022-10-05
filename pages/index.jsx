@@ -28,6 +28,7 @@ export default function Home() {
             <Image
               src={onoback}
               className="hidden md:inline-flex lg:h-full -translate-x-4"
+              alt="oneiros background"
             />
 
             <h2 className="text-lg max-w-md -translate-y-6">
@@ -96,32 +97,32 @@ export default function Home() {
               <h2 className="text-9xl font-Montserrat font-extrabold">
                 Revive
               </h2>
-              <Image src={onoLogo} width={300} height={50} />
+              <Image src={onoLogo} width={300} height={50} alt="oneiros logo" />
             </div>
             <div className="h-20 w-full grid grid-cols-4 space-x-10">
               <div className="flex flex-col justify-center items-center">
                 <h3 className="text-3xl font-Montserrat font-extrabold">
                   Melange
                 </h3>
-                <Image src={ono19} />
+                <Image src={ono19} alt="oneiros19 logo" />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3 className="text-3xl font-Montserrat font-extrabold">
                   Reverie
                 </h3>
-                <Image src={ono18} />
+                <Image src={ono18} alt="oneiros18 logo" />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3 className="text-3xl font-Montserrat font-extrabold">
                   ReLive
                 </h3>
-                <Image src={ono17} />
+                <Image src={ono17} alt="oneiros17 logo" />
               </div>
               <div className="flex flex-col justify-center items-center">
                 <h3 className="text-3xl font-Montserrat font-extrabold">
                   BlendIn
                 </h3>
-                <Image src={ono16} />
+                <Image src={ono16} alt="oneiros16 logo" />
               </div>
             </div>
           </div>
