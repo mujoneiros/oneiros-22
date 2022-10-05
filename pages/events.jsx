@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import Header from '../components/Header';
 import { minorevents } from '../data/events';
 
-export default function events() {
+export default function Events() {
   const [major, setMajor] = useState(false);
   const [minor, setMinor] = useState(false);
 

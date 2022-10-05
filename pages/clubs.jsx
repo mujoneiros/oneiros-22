@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function clubs() {
-  return <div>clubs</div>;
+export default function Clubs() {
+  return <div>clubC</div>;
 }

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import React from 'react';
 import Header from '../components/Header';
 
-export default function sponsors() {
+export default function Sponsors() {
   const sponsors = [
     {
       image: '/sponsors/image1.png',
