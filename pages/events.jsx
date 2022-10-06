@@ -1,8 +1,9 @@
-import { ChevronRightIcon } from '@heroicons/react/24/solid';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import Header from '../components/Header';
-import { minorevents } from '../data/events';
+import { ChevronRightIcon } from "@heroicons/react/24/solid";
+import Image from "next/image";
+import Link from "next/link";
+import React, { useState } from "react";
+import Header from "../components/Header";
+import { minorevents } from "../data/events";
 
 export default function Events() {
   const [major, setMajor] = useState(false);
@@ -37,7 +38,11 @@ export default function Events() {
             </span>
             <ul class="main font-Montserrat font-medium ">
               <li className="flex transition ease-in-out justify-center items-center hover:scale-110">
-                <span>Destival</span>
+                <Link href="/MajorEvents">
+                  <a className="items-center mx-2 inline-flex cursor-pointer">
+                  <span>Destival</span>
+                  </a>
+                </Link>
               </li>
               <li className="flex justify-center items-center">
                 <span>Destival</span>
@@ -56,7 +61,7 @@ export default function Events() {
           >
             Minor Events
           </h2>
-          <ul className={minor ? 'transition ease-out delay-75' : 'hidden'}>
+          <ul className={minor ? "transition ease-out delay-75" : "hidden"}>
             <li className="flex flex-row justify-center items-center">
               <ChevronRightIcon height={10} width={10} />
               <span>Destival</span>
