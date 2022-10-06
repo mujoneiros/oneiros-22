@@ -20,16 +20,15 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div
-          className="flex justify-between items-center border-y border-black py-10 lg:py-5 text-white h-screen "
-          id="bg-landing"
-        >
+        <div className=" flex justify-between items-center border-y border-black py-10 lg:py-5 text-white h-screen bg-landing">
           <div className="pl-28 space-y-5 w-1/2 flex flex-col left-0 items-start font-Montserrat font-medium">
-            <Image
-              src={onoback}
-              className="hidden md:inline-flex lg:h-full -translate-x-4"
-              alt="oneiros background"
-            />
+            <div className="w-auto">
+              <Image
+                src={onoback}
+                className="hidden md:inline-flex lg:h-full -translate-x-4"
+                alt="oneiros background"
+              />
+            </div>
 
             <h2 className="text-lg max-w-md -translate-y-6">
               Manipal University Jaipur is organizing the annual cultural fest-
@@ -42,8 +41,10 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-screen flex flex-col items-center">
-          <div className="max-w-4xl flex flex-col items-center gap-5 pt-10">
+        {/* bg-gradient-to-t from-transparent via-black to-transparent */}
+        <div className="w-full h-96 grad -translate-y-96 z-30 absolute shadow-inner "></div>
+        <div className="h-screen flex flex-col items-center ">
+          <div className="max-w-4xl flex flex-col items-center gap-5 pt-10 ">
             <Image src={whatisono} alt="What is oneiros" width={600} />
             <p className="font-Montserrat justify-center text-center font-medium">
               The term Oneiros was officially used to personify dreams by
