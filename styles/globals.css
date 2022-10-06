@@ -11,7 +11,7 @@ body {
   padding: 0;
 }
 
-#bg-landing {
+.bg-landing {
   background-image: url('../public/bg-landing-ono.png');
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,6 +19,10 @@ body {
   background-attachment: fixed;
   height: 100vh;
   width: 100%;
+}
+
+.grad {
+  background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1));
 }
 
 .main {
