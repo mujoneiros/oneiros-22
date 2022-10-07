@@ -38,7 +38,11 @@ export default function Events() {
             </span>
             <ul class="main font-Montserrat font-medium ">
               <li className="flex transition ease-in-out justify-center items-center hover:scale-110">
-                <span>Destival</span>
+                <Link href="/MajorEvents">
+                  <a className="items-center mx-2 inline-flex cursor-pointer">
+                    <span>Destival</span>
+                  </a>
+                </Link>
               </li>
               <li className="flex justify-center items-center">
                 <span>Destival</span>
