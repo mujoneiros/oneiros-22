@@ -3,6 +3,9 @@ import Image from 'next/image';
 import React from 'react';
 import Header from '../components/Header';
 import { sponsors } from '../data/sponsors';
+import Link from 'next/link';
+
+
 
 export default function Sponsors() {
   return (
@@ -23,12 +26,21 @@ export default function Sponsors() {
         {sponsors.map((sponsor, _i) => (
           <div key={_i} className="flex justify-center items-center">
             <div className="rounded-full h-40 w-40 relative hover:bg-primaryWhite hover:transition ease-in-out delay-150 ">
-              <Image
+           
+            <Link href={sponsor.link}>
+             <a target={"_blank"}>
+             <Image
                 src={sponsor.image}
                 layout="fill"
                 objectFit="contain"
                 alt="sponsor image"
               />
+             </a>
+             
+             </Link>
+             
+             
+             
             </div>
           </div>
         ))}
