@@ -116,7 +116,7 @@ export default function Artist() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-start items-start mt-60 h-screen max-w-7xl mx-auto">
+      <div className="flex flex-col justify-start items-start mt-20 h-screen max-w-7xl mx-auto">
         <div>
           <div className="max-w-[10rem] relative">
             <Image
@@ -128,9 +128,10 @@ export default function Artist() {
             />
           </div>
           <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
-            Artists
+            Major Artists
           </span>
         </div>
+        <div></div>
       </div>
     </div>
   );

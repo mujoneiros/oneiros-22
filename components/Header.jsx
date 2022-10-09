@@ -31,7 +31,9 @@ export default function Header() {
           </Link>
           <Link href="/artist">
             <a className="items-center mx-2 inline-flex cursor-pointer">
-              <h3 className="ml-2 hidden flex-1 lg:inline-flex">Artists</h3>
+              <h3 className="ml-2 hidden flex-1 lg:inline-flex cursor-pointer">
+                Artists
+              </h3>
             </a>
           </Link>
           <Link href="/sponsors">
@@ -54,11 +56,11 @@ export default function Header() {
               <h3>Teams</h3>
             </a>
           </Link>
-          {/* <Link href="/faqs">
+          <Link href="/faqs">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>FAQs</h3>
             </a>
-          </Link> */}
+          </Link>
         </div>
         <div className="uppercase text-accent underline decoration-accent ">
           Register Now
