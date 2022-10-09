@@ -1,5 +1,6 @@
 import { ArrowUpRightIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import Header from "../components/Header";
 import SponsorImage from "../components/SponsorImage";
@@ -49,15 +50,19 @@ export default function Sponsors() {
           {sponsors.map((sponsor, _i) =>
             sponsor.type === "title" ? (
               <div key={_i} className="flex justify-center items-center">
-                <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
-                  <Image
-                    src={sponsor.image}
-                    layout="fill"
-                    objectFit="contain"
-                    alt="sponsor image"
-                    style={{ filter: "brightness(0) invert(1)" }}
-                  />
-                </div>
+                <Link href={sponsor.link}>
+                  <a target={"_blank"}>
+                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
+                      <Image
+                        src={sponsor.image}
+                        layout="fill"
+                        objectFit="contain"
+                        alt="sponsor image"
+                        style={{ filter: "brightness(0) invert(1)" }}
+                      />
+                    </div>
+                  </a>
+                </Link>
               </div>
             ) : (
               ""
@@ -73,15 +78,19 @@ export default function Sponsors() {
           {sponsors.map((sponsor, _i) =>
             sponsor.type === "associate" ? (
               <div key={_i} className="flex justify-center items-center">
-                <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
-                  <Image
-                    src={sponsor.image}
-                    layout="fill"
-                    objectFit="contain"
-                    alt="sponsor image"
-                    style={{ filter: "brightness(0) invert(1)" }}
-                  />
-                </div>
+                <Link href={sponsor.link}>
+                  <a target={"_blank"}>
+                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
+                      <Image
+                        src={sponsor.image}
+                        layout="fill"
+                        objectFit="contain"
+                        alt="sponsor image"
+                        style={{ filter: "brightness(0) invert(1)" }}
+                      />
+                    </div>
+                  </a>
+                </Link>
               </div>
             ) : (
               ""
@@ -97,15 +106,19 @@ export default function Sponsors() {
           {sponsors.map((sponsor, _i) =>
             sponsor.type === "co" ? (
               <div key={_i} className="flex justify-center items-center">
-                <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
-                  <Image
-                    src={sponsor.image}
-                    layout="fill"
-                    objectFit="contain"
-                    alt="sponsor image"
-                    style={{ filter: "brightness(0) invert(1)" }}
-                  />
-                </div>
+                <Link href={sponsor.link}>
+                  <a target={"_blank"}>
+                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
+                      <Image
+                        src={sponsor.image}
+                        layout="fill"
+                        objectFit="contain"
+                        alt="sponsor image"
+                        style={{ filter: "brightness(0) invert(1)" }}
+                      />
+                    </div>
+                  </a>
+                </Link>
               </div>
             ) : (
               ""
