@@ -5,15 +5,9 @@ import oneirosLogo from '../assets/images/OneirosLogo.png';
 import onoback from '../assets/svgs/onoback.svg';
 import whatisono from '../assets/svgs/whatisono.svg';
 import abouteventono from '../assets/svgs/abouteventono.svg';
-import reviveono from '../assets/svgs/reviveono.svg';
+import reviveono from '../assets/images/reviveono.png';
 import onoprev from '../assets/svgs/onoprev.svg';
 import onoevents from '../assets/images/onoevents.png';
-import onoLogo from '../assets/svgs/onoLogo.svg';
-import ono16 from '../assets/svgs/ono16.svg';
-import ono17 from '../assets/svgs/ono17.svg';
-import ono18 from '../assets/svgs/ono18.svg';
-import ono19 from '../assets/svgs/ono19.svg';
-import oneiros22 from '../assets/images/Oneiros22.png';
 
 import { BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
 
@@ -74,7 +68,13 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col justify-around items-center max-w-7xl mx-auto mt-20">
-          <div className="max-w-5xl mb-24">
+          <div className="max-w-5xl mb-24 flex flex-col items-center">
+            <span
+              className="font-stolzl uppercase mb-10 text-xl pl-8"
+              style={{ letterSpacing: '1.3vw' }}
+            >
+              History of oneiros
+            </span>
             <Image src={reviveono} className="" />
           </div>
           <div>
