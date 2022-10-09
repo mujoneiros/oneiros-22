@@ -6,6 +6,33 @@ import Header from "../components/Header";
 import { minorevents } from "../data/events";
 import "./../styles//events.module.css";
 
+const data = [
+  {
+    source: "majorEvents/cosmos.png",
+    title: "COSMOS",
+    club: "COSMOS",
+    date: "14",
+    time: "7:20PM",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam",
+  },
+  {
+    source: "majorEvents/destival.png",
+    title: "DESTIVAL",
+    club: "COREOGRAFIA",
+    date: "15",
+    time: "7:20PM",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam",
+  },
+  {
+    source: "majorEvents/requiem.png",
+    title: "REQUIEM",
+    club: "THE MUSIC CLUB",
+    date: "15",
+    time: "7:20PM",
+    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam",
+  },
+];
+
 export default function Events() {
   const [major, setMajor] = useState(false);
   const [minor, setMinor] = useState(false);
@@ -160,6 +187,32 @@ export default function Events() {
           </ul>
         </div>
       </div>
+      <div>
+      {data.map((item) => (
+          <div style={{"float": "right"}}>
+            <img src = {item.source}></img>
+            <h1>{item.title}</h1>
+            <h3>Event by {item.club}</h3>
+            <h4>{item.info}</h4>
+            <h1>{item.date}<span style={{verticalAlign:"super"}}>th</span> OCT</h1>
+            <h2>{item.time}</h2>
+            <button
+            className='hover: bg-white hover:text-black'
+            style={{
+              borderColor:"white",
+              borderWidth:"2px",
+              backgroundColor: "rgb(4,7,19)",
+              color: "white",
+              padding: "10px 40px",
+              fontSize: "170%",
+              fontWeight: "600",
+            }}
+          >
+            REGISTER
+          </button>
+          </div>
+      ))}
+    </div>
       <main className="w-3/4 grid grid-cols-4 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
         {minorevents.payload.map((minorevent, _i) => (
           <>
@@ -180,7 +233,8 @@ export default function Events() {
                   <div className=" z-20 bottom-0 ">
                     <span className="capitalize text-base">
                       {eventname.eventName}
-                    </span><br />
+                    </span>
+                    <br />
                     <span className="text-2xs font-extralight  ">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Rem cumque minima consequuntur labore exercitationem nemo
