@@ -7,6 +7,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import reviveono from '../assets/images/reviveono.png';
 import onoLogo from '../assets/images/onoLogo.jpg';
+import CustomCarousel from '../components/CustomCarousel';
 
 export default function Artist() {
   const artists = [
@@ -94,6 +95,7 @@ export default function Artist() {
           </div>
         </div>
       </Carousel>
+
       <div className="bg-artist">
         <div className=" h-screen flex flex-col items-center justify-around pt-20">
           <span className="inline-block text-8xl font-freak">3 DAYS</span>
@@ -116,23 +118,25 @@ export default function Artist() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-start items-start mt-20 h-screen max-w-7xl mx-auto">
-        <div>
-          <div className="max-w-[10rem] relative">
-            <Image
-              src={onoLogo}
-              width={200}
-              height={30}
-              layout="fixed"
-              objectFit="cover"
-            />
+      <div>
+        <div className="flex flex-col justify-start items-start my-20 max-w-7xl mx-auto ">
+          <div>
+            <div className="max-w-[10rem] relative">
+              <Image
+                src={onoLogo}
+                width={200}
+                height={30}
+                layout="fixed"
+                objectFit="cover"
+              />
+            </div>
+            <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
+              Major Artists
+            </span>
           </div>
-          <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
-            Major Artists
-          </span>
         </div>
-        <div></div>
       </div>
+      <CustomCarousel />
     </div>
   );
 }

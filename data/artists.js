@@ -20,5 +20,15 @@ export const artists = {
       link: '',
       imageUrl: 'https://placeimg.com/300/300/tech',
     },
+    {
+      title: 'Super item number the last',
+      link: '',
+      imageUrl: 'https://placeimg.com/300/300/tech',
+    },
+    {
+      title: 'Super item number the last',
+      link: '',
+      imageUrl: 'https://placeimg.com/300/300/tech',
+    },
   ],
 };
