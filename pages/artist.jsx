@@ -127,8 +127,8 @@ export default function Artist() {
               objectFit="cover"
             />
           </div>
-          <span className="uppercase text-3xl text-accent font-stolzl pl-1.5">
-            Major Artists
+          <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
+            Artists
           </span>
         </div>
       </div>
