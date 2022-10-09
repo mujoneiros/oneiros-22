@@ -24,7 +24,7 @@ module.exports = {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
         Jost: ['Jost', 'sans-serif'],
-        stolzl: ['Stolzl_Display', 'sans-serif'],
+        stolzl: ['Stolzl Display', 'sans-serif'],
         freak: ['FREAK Grotesk Next', 'sans-serif'],
       },
       animation: {

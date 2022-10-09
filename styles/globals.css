@@ -12,6 +12,15 @@ body {
   padding: 0;
 }
 
+@font-face {
+  font-family: 'Stolzl Display';
+  src: url('../assets/fonts/Stolzl_Display.otf');
+}
+@font-face {
+  font-family: 'FREAK Grotesk Next';
+  src: url('../assets/fonts/FREAK\ Grotesk\ Next.otf');
+}
+
 .bg-landing {
   background-image: url('../public/oneirosbackground.png');
   background-size: cover;
