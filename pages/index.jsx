@@ -4,11 +4,17 @@ import Header from '../components/Header';
 import oneirosLogo from '../assets/images/OneirosLogo.png';
 import onoback from '../assets/svgs/onoback.svg';
 import whatisono from '../assets/svgs/whatisono.svg';
+import abouteventono from '../assets/svgs/abouteventono.svg';
+import reviveono from '../assets/svgs/reviveono.svg';
+import onoprev from '../assets/svgs/onoprev.svg';
+import onoevents from '../assets/images/onoevents.png';
 import onoLogo from '../assets/svgs/onoLogo.svg';
 import ono16 from '../assets/svgs/ono16.svg';
 import ono17 from '../assets/svgs/ono17.svg';
 import ono18 from '../assets/svgs/ono18.svg';
 import ono19 from '../assets/svgs/ono19.svg';
+import oneiros22 from '../assets/images/Oneiros22.png';
+
 import { BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
 
 export default function Home() {
@@ -20,81 +26,61 @@ export default function Home() {
       </Head>
       <Header />
       <main>
-        <div className=" flex justify-between items-center border-y border-black py-10 lg:py-5 text-white h-screen bg-landing">
-          <div className="pl-28 space-y-5 w-1/2 flex flex-col left-0 items-start font-Montserrat font-medium">
-            <div className="w-auto">
+        <div className=" flex justify-center items-center border-y border-black py-10 lg:py-5 text-white h-screen bg-landing ">
+          {/* <div className="pl-28 space-y-5 w-2/4 flex flex-col items-center font-Montserrat font-medium ">
+            <div className="w-auto -translate-x-28 translate-y-14">
               <Image
-                src={onoback}
-                className="hidden md:inline-flex lg:h-full -translate-x-4"
+                src={oneiros22}
+                className="hidden md:inline-flex lg:h-full "
                 alt="oneiros background"
               />
             </div>
-
-            <h2 className="text-lg max-w-md -translate-y-6">
-              Manipal University Jaipur is organizing the annual cultural fest-
-              Oneiros (14-16 Oct. 2022) which is an amalgamation of art and
-              cultural activities.
-            </h2>
-            <div className="flex flex-col border border-b-2 py-4 w-56 items-center">
-              <h3 className="text-xl font-extrabold">Loremipsumdolor</h3>
-              <h4>14-16 OCT | JAIPUR</h4>
+            <div className="uppercase w-40 h-6 bg-clip-padding backdrop-filter backdrop-blur-xl bg-opacity-60 border border-gray-200 rounded-full backdrop-brightness-125 flex justify-center items-center p-4">
+              Register
             </div>
-          </div>
+          </div> */}
         </div>
         {/* bg-gradient-to-t from-transparent via-black to-transparent */}
         <div className="w-full h-96 grad -translate-y-96 z-30 absolute shadow-inner "></div>
-        <div className="h-screen flex flex-col items-center ">
-          <div className="max-w-4xl flex flex-col items-center gap-5 pt-10 ">
-            <Image src={whatisono} alt="What is oneiros" width={600} />
-            <p className="font-Montserrat justify-center text-center font-medium">
+
+        <div className="max-w-4xl flex flex-col mx-auto justify-center items-center gap-9 pt-10 h-screen">
+          <Image
+            src={abouteventono}
+            alt="What is oneiros"
+            width={600}
+            className=""
+          />
+          <div>
+            <p className="font-Montserrat justify-center text-center font-medium max-w-2xl">
               The term Oneiros was officially used to personify dreams by
               ancient Greeks. However, Manipal University Jaipur takes the
               mediocrity of this word and gives a picture that shines too bright
               for reality. A fest that portrays grandeur and proudly boasts of
               exceptional events; from the highs of adrenaline to the floodgates
-              of opportunities; Oneiros encapsulates it all. Continuing to be
-              one of the biggest attractions for academies throughout Rajasthan
-              and gracefully honouring the legacy of its predecessors, this
-              gallant fiesta is the highlight of the year.
+              of opportunities; Oneiros encapsulates it all.
             </p>
-            {/* <button
+            <p className="font-Montserrat justify-center text-center font-medium mt-4 max-w-2xl">
+              Continuing to be one of the biggest attractions for academies
+              throughout Rajasthan and gracefully honouring the legacy of its
+              predecessors, this gallant fiesta is the highlight of the year.
+            </p>
+          </div>
+          {/* <button
               type="button"
               class="flex max-w-sm  bg-gradient-to-r from-green-500 to-blue-500 hover:from-green-600 hover:to-blue-600 focus:outline-none text-white uppercase font-bold shadow-md rounded-full py-3 px-4 text-center"
             >
               Register Now
             </button> */}
+        </div>
+
+        <div className="flex flex-col justify-around items-center max-w-7xl mx-auto mt-20">
+          <div className="max-w-5xl mb-24">
+            <Image src={reviveono} className="" />
           </div>
-          {/* <div className="mt-36 flex flex-col justify-center items-center">
-            <h2 className="text-4xl max-w-xl font-serif pb-6 decoration-white decoration-4 underline">
-              Why you should attend
-            </h2>
-            <div className="flex justify-between space-x-10">
-              <div className="w-40 h-40 relative">
-                <div className="w-full h-full absolute top-0 left-0 bg-gray-300 z-10 flex flex-col justify-center items-center px-2">
-                  <SunIcon className="h-5 w-5 mx-auto text-black" />
-                  <p className="text-black text-sm pt-2">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Autem, aliquid!
-                  </p>
-                </div>
-                <div className="w-full h-full absolute top-0 left-0  m-2 bg-slate-800"></div>
-              </div>
-              <div className="w-40 h-40 relative">
-                <div className="w-full h-full absolute top-0 left-0 bg-gray-300 z-10"></div>
-                <div className="w-full h-full absolute top-0 left-0  m-2 bg-slate-800"></div>
-              </div>
-              <div className="w-40 h-40 relative">
-                <div className="w-full h-full absolute top-0 left-0 bg-gray-300 z-10"></div>
-                <div className="w-full h-full absolute top-0 left-0  m-2 bg-slate-800"></div>
-              </div>
-              <div className="w-40 h-40 relative">
-                <div className="w-full h-full absolute top-0 left-0 bg-gray-300 z-10"></div>
-                <div className="w-full h-full absolute top-0 left-0  m-2 bg-slate-800"></div>
-              </div>
-            </div>
-          </div> */}
-          <div className="mt-60 flex flex-col justify-center items-center ">
-            <div className="flex flex-col justify-center items-center">
+          <div>
+            <Image src={onoprev} className="" />
+          </div>
+          {/* <div className="flex flex-col justify-center items-center">
               <h2 className="text-9xl font-Montserrat font-extrabold">
                 Revive
               </h2>
@@ -125,7 +111,16 @@ export default function Home() {
                 </h3>
                 <Image src={ono16} alt="oneiros16 logo" />
               </div>
-            </div>
+            </div> */}
+        </div>
+        <div className=" flex flex-col justify-start items-start mt-60 h-screen max-w-7xl mx-auto">
+          <div className="max-w-xs">
+            <Image src={onoevents} />
+          </div>
+          <div className="flex overflow-x-auto p-4 h-2/3 w-full mt-3 gap-3">
+            <div className="bg-red-700 h-full w-72"></div>
+            <div className="bg-red-700 h-full w-[180px]"></div>
+            <div className="bg-red-700 h-full w-[180px]"></div>
           </div>
         </div>
       </main>

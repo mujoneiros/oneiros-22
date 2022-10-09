@@ -12,10 +12,11 @@ module.exports = {
         secondary: '#142657',
         tertiary: '#298295',
         primaryWhite: '#FEFEFE',
-        accent: '#34ACD9',
+        accent: '#59EDEA',
         aqua: '#1F6983',
         aqua2: '#1D6071',
         secondaryWhite: '#D9D9D9',
+        primaryBlack: '#040713',
       },
       fontSize: {
         '2xs': '.625rem',
@@ -23,6 +24,8 @@ module.exports = {
       fontFamily: {
         Montserrat: ['Montserrat', 'sans-serif'],
         Jost: ['Jost', 'sans-serif'],
+        stolzl: ['Stolzl_Display', 'sans-serif'],
+        freak: ['FREAK Grotesk Next', 'sans-serif'],
       },
       animation: {
         fade: 'fade ease-in-out 0.5s',
@@ -41,5 +44,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('flowbite/plugin')],
 };

@@ -13,7 +13,7 @@ body {
 }
 
 .bg-landing {
-  background-image: url('../public/bg-landing-ono.png');
+  background-image: url('../public/oneirosbackground.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
