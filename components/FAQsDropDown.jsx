@@ -30,7 +30,7 @@ export default function Faqs(props) {
     titleTextColor: "white",
     rowTitleColor: "white",
     rowContentColor: "white",
-    // arrowColor: "red",
+    arrowColor: "white",
   };
 
   const config = {
