@@ -1,5 +1,6 @@
 import { ChevronRightIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import Header from '../components/Header';
 import { minorevents } from '../data/events';
@@ -37,7 +38,11 @@ export default function Events() {
             </span>
             <ul class="main font-Montserrat font-medium ">
               <li className="flex transition ease-in-out justify-center items-center hover:scale-110">
-                <span>Destival</span>
+                <Link href="/MajorEvents">
+                  <a className="items-center mx-2 inline-flex cursor-pointer">
+                    <span>Destival</span>
+                  </a>
+                </Link>
               </li>
               <li className="flex justify-center items-center">
                 <span>Destival</span>
@@ -81,25 +86,27 @@ export default function Events() {
 
             {minorevent.eventNames.map((eventname, _i) => (
               <div key={_i} className="flex justify-center items-center mx-10">
-                <div className="relative bg-black mb-20 hover:scale-125 transition ease-in-out duration-300 group ">
-                  <Image
-                    src={eventname.image}
-                    height={450}
-                    width={360}
-                    className="absolute group-hover:brightness-50 duration-75 ease-in"
-                  />
-                  {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
-                  <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
-                    <span className="capitalize text-base">
-                      {eventname.eventName}
-                    </span>
-                    <span className="text-2xs font-extralight  ">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Rem cumque minima consequuntur labore exercitationem nemo
-                      animi inventore ipsa iste officia!
-                    </span>
+                <Link key={_i} href={`/event`}>
+                  <div className="relative bg-black mb-20 hover:scale-125 transition ease-in-out duration-300 group ">
+                    <Image
+                      src={eventname.image}
+                      height={450}
+                      width={360}
+                      className="absolute group-hover:brightness-50 duration-75 ease-in"
+                    />
+                    {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
+                    <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
+                      <span className="capitalize text-base">
+                        {eventname.eventName}
+                      </span>
+                      <span className="text-2xs font-extralight  ">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing
+                        elit. Rem cumque minima consequuntur labore
+                        exercitationem nemo animi inventore ipsa iste officia!
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
             ))}
           </>

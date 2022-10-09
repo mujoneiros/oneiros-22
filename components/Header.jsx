@@ -8,8 +8,8 @@ export default function Header() {
   // const navItems = [{ name: 'Events', link: '/events' }];
   return (
     <div>
-      <header className="fixed top-0 flex sm:px-4 min-w-full bg-black  text-white z-1 justify-between items-center h-14 z-50">
-        <div className="relative flex z-2 ml-20 h-10 ">
+      <header className="fixed top-0 flex sm:px-4 min-w-full bg-transparent text-white z-1 justify-around items-center h-14 z-50 pt-4">
+        <div className="relative flex z-2 h-10 ">
           <Link href="/" passHref={true}>
             <a>
               <Image
@@ -23,15 +23,15 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="flex justify-between pr-10 w-2/5">
-          <Link href="/artist">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
-              <h3 className="ml-2 hidden flex-1 lg:inline-flex">Artists</h3>
-            </a>
-          </Link>
+        <div className="flex justify-between w-2/5">
           <Link href="/events">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>Events</h3>
+            </a>
+          </Link>
+          <Link href="/artist">
+            <a className="items-center mx-2 inline-flex cursor-pointer">
+              <h3 className="ml-2 hidden flex-1 lg:inline-flex">Artists</h3>
             </a>
           </Link>
           <Link href="/sponsors">
@@ -54,11 +54,14 @@ export default function Header() {
               <h3>Teams</h3>
             </a>
           </Link>
-          <Link href="/faqs">
+          {/* <Link href="/faqs">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>FAQs</h3>
             </a>
-          </Link>
+          </Link> */}
+        </div>
+        <div className="uppercase text-accent underline decoration-accent ">
+          Register Now
         </div>
       </header>
     </div>
