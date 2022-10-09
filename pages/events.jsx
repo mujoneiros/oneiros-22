@@ -4,6 +4,7 @@ import Link from "next/link";
 import React, { useState } from "react";
 import Header from "../components/Header";
 import { minorevents } from "../data/events";
+import "./../styles//events.module.css";
 
 export default function Events() {
   const [major, setMajor] = useState(false);
@@ -12,10 +13,10 @@ export default function Events() {
   return (
     <div>
       <Header />
-      <nav className="fixed h-full w-1/4 text-black font-Montserrat text-center shadow-sm shadow-primaryWhite bg-secondaryWhite">
+      {/* <nav className="fixed h-full w-1/4 text-black font-Montserrat text-center shadow-sm shadow-primaryWhite bg-secondaryWhite">
         <h1 className="text-6xl pt-40 font-extrabold ">EVENTS</h1>
         <ul className="mt-12 flex flex-col items-center cursor-pointer">
-          {/* <h2 className="font-bold text-3xl" onClick={() => setMajor(!major)}>
+          <h2 className="font-bold text-3xl" onClick={() => setMajor(!major)}>
             Major Events
           </h2>
           <ul className={major ? '' : 'hidden'}>
@@ -31,7 +32,7 @@ export default function Events() {
               <ChevronRightIcon height={10} width={10} />
               <span>Cosmos</span>
             </li>
-          </ul> */}
+          </ul>
           <li class="hov">
             <span className="font-bold text-3xl pt-5 font-Montserrat">
               Major Events
@@ -93,11 +94,93 @@ export default function Events() {
                     width={360}
                     className="absolute group-hover:brightness-50 duration-75 ease-in"
                   />
-                  {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
+                  <div className="absolute z-10 bg-black w-4 h-4"></div>
                   <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                     <span className="capitalize text-base">
                       {eventname.eventName}
                     </span>
+                    <span className="text-2xs font-extralight  ">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Rem cumque minima consequuntur labore exercitationem nemo
+                      animi inventore ipsa iste officia!
+                    </span>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </>
+        ))}
+      </main> */}
+      <br />
+      <br />
+      <Image src="/EventsIntro.png" width={1920} height={314} />
+      <div
+        style={{
+          width: "10vw",
+          padding: "10px 30px 10px 30px",
+          backgroundColor: "#06101C",
+        }}
+      >
+        <div>
+          <h2 style={{ color: "#3EDCF2", fontWeight: "800" }}>
+            MAJOR
+            <br />
+            EVENTS
+          </h2>
+          <hr />
+          <ul>
+            <li>Cosmos</li>
+            <li>Destival</li>
+            <li>Requiem</li>
+            <li>DJ Night</li>
+            <li>Prabhdeep</li>
+            <li>Lifafa</li>
+          </ul>
+        </div>
+        <div>
+          <h2 style={{ color: "#3EDCF2", fontWeight: "800" }}>
+            MINOR
+            <br />
+            EVENTS
+          </h2>
+          <hr />
+          <ul>
+            <li>Aperture</li>
+            <li>Cinefilia</li>
+            <li>Convergence</li>
+            <li>Coreografia</li>
+            <li>D-Club</li>
+            <li>Estrella</li>
+            <li>Glitch</li>
+            <li>Rotaract</li>
+            <li>LearnIT</li>
+            <li>Litmus</li>
+            <li>The Music Club</li>
+            <li>Scribbles</li>
+          </ul>
+        </div>
+      </div>
+      <main className="w-3/4 grid grid-cols-4 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
+        {minorevents.payload.map((minorevent, _i) => (
+          <>
+            <div className="text-4xl col-span-4 place-self-start font-Montserrat uppercase font-semibold ml-8">
+              {minorevent.name}
+            </div>
+
+            {minorevent.eventNames.map((eventname, _i) => (
+              <div key={_i} className="flex justify-center items-center mx-10">
+                <div className="relative bg-black mb-20">
+                  <Image
+                    src={eventname.image}
+                    height={450}
+                    width={360}
+                    className=""
+                  />
+                  <div className=" z-10 bg-black w-4 h-4"></div>
+                  <div className=" z-20 bottom-0 ">
+                    <span className="capitalize text-base">
+                      {eventname.eventName}
+                    </span><br />
                     <span className="text-2xs font-extralight  ">
                       Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                       Rem cumque minima consequuntur labore exercitationem nemo
