@@ -126,6 +126,11 @@ export default function Home() {
           </Link>
         </div>
       </main>
+      <footer>
+        <div className="">
+          <Image src={'/footerImage.png'} layout="fill" objectFit="cover" />
+        </div>
+      </footer>
     </div>
   );
 }
