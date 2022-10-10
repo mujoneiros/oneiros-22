@@ -37,40 +37,49 @@ export default function Sponsors() {
     //   </main>
     // </div>
 
-    <div>
+    <div style = {{backgroundImage: "linear-gradient(#030912, #317695)"}}>
       <Header />
       <br />
       <br />
-      <Image src="/introImage.png" width={1920} height={314} />
+      <Image src="/prev_sponsors_head.png" width={1920} height={314} />
+      <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6 text-3xl">
+          Talent Showcase Partner
+        </h1>
+        <div className="justify-center items-center flex m-10 p-10">
+        <Image src="/mood_indigo.png" objectFit = "contain" width={880} height={182} />
+        </div>
+        <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6 text-3xl">
+          Entertainment Partner
+        </h1>
+        <div className="justify-center items-center flex m-10 p-10">
+        <Image src="/sas_ent.png" objectFit = "contain" width={880} height={273} />
+        </div>
       <div className="title_sponsors">
-        <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6">
-          TITLE SPONSORS
+        <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6 text-3xl">
+          Sponsors and Partners
         </h1>
         <main className="flex justify-center wrap flex-wrap">
-          {sponsors.map((sponsor, _i) =>
-            sponsor.type === "title" ? (
+          {sponsors.map((sponsor, _i) =>(
               <div key={_i} className="flex justify-center items-center">
                 <Link href={sponsor.link}>
                   <a target={"_blank"}>
-                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
+                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10 ml-10 mr-10">
                       <Image
                         src={sponsor.image}
                         layout="fill"
                         objectFit="contain"
                         alt="sponsor image"
-                        style={{ filter: "brightness(0) invert(1)" }}
+                        // style={{ filter: "brightness(0) invert(1)" }}
                       />
                     </div>
                   </a>
                 </Link>
               </div>
-            ) : (
-              ""
             )
           )}
         </main>
       </div>
-      <div className="associate_sponsors">
+      {/* <div className="associate_sponsors">
         <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6">
           ASSOCIATE SPONSORS
         </h1>
@@ -95,8 +104,8 @@ export default function Sponsors() {
             ) : (
               ""
             )
-          )}
-        </main>
+          )} */}
+        {/* </main>
       </div>
       <div className="co_sponsors">
         <h1 style={{ color: "#A5C1D1" }} className="text-center mt-6">
@@ -124,8 +133,8 @@ export default function Sponsors() {
               ""
             )
           )}
-        </main>
+        </main> */}
       </div>
-    </div>
+    // </div>
   );
 }
