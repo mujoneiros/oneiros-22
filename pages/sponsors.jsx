@@ -5,6 +5,7 @@ import React from 'react';
 import Header from '../components/Header';
 import SponsorImage from '../components/SponsorImage';
 import { sponsors } from '../data/sponsors';
+import Link from 'next/link';
 
 export default function Sponsors() {
   return (
