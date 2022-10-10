@@ -2,26 +2,21 @@ import Image from 'next/image';
 import React from 'react';
 import Header from '../components/Header';
 import jubin from '../assets/images/artists/jubin.jpg';
-import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+import { ArrowUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import reviveono from '../assets/images/reviveono.png';
 import onoLogo from '../assets/images/onoLogo.jpg';
 import CustomCarousel from '../components/CustomCarousel';
+import Link from 'next/link';
 
 export default function Artist() {
-  const artists = [
-    {
-      name: 'Jubin Nautiyal',
-      image: '/artists/jubin.jpg',
-      instaLink: 'https://www.instagram.com/jubin_nautiyal/',
-    },
-    {
-      name: 'Jubin Nautiyal',
-      image: '/artists/jubin.jpg',
-      instaLink: 'https://www.instagram.com/jubin_nautiyal/',
-    },
-  ];
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div className="">
       <Header />
@@ -137,6 +132,42 @@ export default function Artist() {
         </div> */}
       </div>
       <CustomCarousel />
+      <footer className="bg-footer relative">
+        <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">
+          <div className="relative w-[60rem] h-96 ">
+            <Image
+              src={'/comeandexperience.png'}
+              layout="fill"
+              objectFit="contain"
+            />
+          </div>
+
+          <Link href={'/events'}>
+            <button className="uppercase mr-auto mt-6 bg-white bg-opacity-40 py-4 px-8 cursor-pointer mx-auto place-self-center col-span-3">
+              Explore Events
+            </button>
+          </Link>
+        </div>
+        <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
+          <Image src={'/onorevive1416.png'} height={100} width={200} />
+          <div className="h-40 w-40 flex flex-col justify-center items-center">
+            <div
+              className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
+              onClick={goToTop}
+            >
+              <ArrowUpIcon className="text-accent h-5 w-5" />
+            </div>
+            GO TO TOP
+          </div>
+          <div className="font-Montserrat">
+            <h3 className="text-lg font-bold">Latest updates on</h3>
+            <div className="h-5 w-5 text-sm">
+              instagram
+              <span className="">/mujoniros</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

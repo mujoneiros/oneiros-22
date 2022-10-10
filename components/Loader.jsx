@@ -5,7 +5,7 @@ import oneirosLogo from '../assets/gifs/logo.gif';
 export default function Loader() {
   return (
     <div>
-      <div className="h-screen flex justify-center items-center">
+      <div className="h-screen flex justify-center items-center bg-black">
         <Image src={oneirosLogo} height={480} width={897} alt="loading image" />
       </div>
     </div>
