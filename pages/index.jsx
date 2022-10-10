@@ -8,8 +8,10 @@ import abouteventono from '../assets/svgs/abouteventono.svg';
 import reviveono from '../assets/images/reviveono.png';
 import onoprev from '../assets/svgs/onoprev.svg';
 import onoevents from '../assets/images/onoevents.png';
+import { landingPageEvents } from '../data/events';
 
 import { BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -19,7 +21,7 @@ export default function Home() {
         <meta name="description" content="Oneiros" />
       </Head>
       <Header />
-      <main>
+      <main className="overflow-hidden">
         <div className=" flex justify-center items-center border-y border-black py-10 lg:py-5 text-white h-screen bg-landing ">
           {/* <div className="pl-28 space-y-5 w-2/4 flex flex-col items-center font-Montserrat font-medium ">
             <div className="w-auto -translate-x-28 translate-y-14">
@@ -80,49 +82,49 @@ export default function Home() {
           <div>
             <Image src={onoprev} className="" />
           </div>
-          {/* <div className="flex flex-col justify-center items-center">
-              <h2 className="text-9xl font-Montserrat font-extrabold">
-                Revive
-              </h2>
-              <Image src={onoLogo} width={300} height={50} alt="oneiros logo" />
-            </div>
-            <div className="h-20 w-full grid grid-cols-4 space-x-10">
-              <div className="flex flex-col justify-center items-center">
-                <h3 className="text-3xl font-Montserrat font-extrabold">
-                  Melange
-                </h3>
-                <Image src={ono19} alt="oneiros19 logo" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h3 className="text-3xl font-Montserrat font-extrabold">
-                  Reverie
-                </h3>
-                <Image src={ono18} alt="oneiros18 logo" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h3 className="text-3xl font-Montserrat font-extrabold">
-                  ReLive
-                </h3>
-                <Image src={ono17} alt="oneiros17 logo" />
-              </div>
-              <div className="flex flex-col justify-center items-center">
-                <h3 className="text-3xl font-Montserrat font-extrabold">
-                  BlendIn
-                </h3>
-                <Image src={ono16} alt="oneiros16 logo" />
-              </div>
-            </div> */}
         </div>
-        {/* <div className=" flex flex-col justify-start items-start mt-60 h-screen max-w-7xl mx-auto">
+        <div className=" flex flex-col justify-start items-start mt-60 max-w-7xl mx-auto">
           <div className="max-w-xs">
             <Image src={onoevents} />
           </div>
-          <div className="flex overflow-x-auto p-4 h-2/3 w-full mt-3 gap-3">
-            <div className="bg-red-700 h-full w-72"></div>
-            <div className="bg-red-700 h-full w-[180px]"></div>
-            <div className="bg-red-700 h-full w-[180px]"></div>
-          </div>
-        </div> */}
+        </div>
+        <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden mx-20">
+          {landingPageEvents.map((eventname, _i) => (
+            <div key={_i} className=" mx-10  ">
+              <div className="relative bg-black mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
+                <Image
+                  src={eventname.image}
+                  height={450}
+                  width={360}
+                  className="absolute group-hover:brightness-50 duration-75 ease-in"
+                />
+                <div className="absolute z-10 bg-black w-4 h-4"></div>
+                <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
+                  <span className="capitalize text-base">{eventname.name}</span>
+                  <span className="text-2xs font-extralight  ">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Rem cumque minima consequuntur labore exercitationem nemo
+                    animi inventore ipsa iste officia!
+                  </span>
+                </div>
+              </div>
+              <div className="w-full h-20">
+                <div className="text-white font-Montserrat">
+                  {`${eventname.name}`}
+                </div>
+                <div className="text-grey1 font-Montserrat">
+                  {eventname.date}
+                  <span>{` | ${eventname.time}`}</span>
+                </div>
+              </div>
+            </div>
+          ))}
+          <Link href={'/events'}>
+            <button className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer mx-auto place-self-center col-span-3">
+              Explore Events
+            </button>
+          </Link>
+        </div>
       </main>
     </div>
   );

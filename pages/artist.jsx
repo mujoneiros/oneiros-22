@@ -119,7 +119,7 @@ export default function Artist() {
         </div>
       </div>
       <div>
-        <div className="flex flex-col justify-start items-start my-20 max-w-7xl mx-auto ">
+        {/* <div className="flex flex-col justify-start items-start my-20 max-w-7xl mx-auto ">
           <div>
             <div className="max-w-[10rem] relative">
               <Image
@@ -134,7 +134,7 @@ export default function Artist() {
               Major Artists
             </span>
           </div>
-        </div>
+        </div> */}
       </div>
       <CustomCarousel />
     </div>

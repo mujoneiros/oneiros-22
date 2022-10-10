@@ -41,28 +41,23 @@ export default function Header() {
               <h3>Sponsors</h3>
             </a>
           </Link>
-          <Link href="/stalls">
+          {/* <Link href="/stalls">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>Stalls</h3>
             </a>
-          </Link>
-          <Link href="/clubs">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
-              <h3>Clubs</h3>
-            </a>
-          </Link>
-          <Link href="/teams">
+          </Link> */}
+          {/* <Link href="/teams">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>Teams</h3>
             </a>
-          </Link>
+          </Link> */}
           <Link href="/faqs">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>FAQs</h3>
             </a>
           </Link>
         </div>
-        <div className="uppercase text-accent underline decoration-accent ">
+        <div className="uppercase text-accent cursor-pointer neonText ">
           Register Now
         </div>
       </header>

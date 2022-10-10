@@ -6,48 +6,18 @@ import Header from '../components/Header';
 import { minorevents, majorEvents } from '../data/events';
 import './../styles//events.module.css';
 
-const data = [
-  {
-    source: 'majorEvents/cosmos.png',
-    title: 'COSMOS',
-    club: 'COSMOS',
-    date: '14',
-    time: '7:20PM',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam',
-  },
-  {
-    source: 'majorEvents/destival.png',
-    title: 'DESTIVAL',
-    club: 'COREOGRAFIA',
-    date: '15',
-    time: '7:20PM',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam',
-  },
-  {
-    source: 'majorEvents/requiem.png',
-    title: 'REQUIEM',
-    club: 'THE MUSIC CLUB',
-    date: '15',
-    time: '7:20PM',
-    info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi dolore adipisci quod, aliquid repudiandae veritatis sint sed quos quidem? Pariatur quae, magnam',
-  },
-];
-
 export default function Events() {
-  const [major, setMajor] = useState(false);
-  const [minor, setMinor] = useState(false);
-
   return (
     <div>
       <Header />
       <Image src="/EventsIntro.png" width={1920} height={314} />
-      <nav className="-translate-y-1.5 fixed h-[30rem] w-1/4 font-Montserrat text-center bg-secondary text-white flex flex-col items-start pl-10 overflow-y-scroll pb-10">
+      <nav className="-translate-y-1.5 fixed h-[30rem] w-1/4 font-Montserrat text-center bg-secondary text-white flex flex-col items-start pl-10 overflow-y-scroll pb-10 ">
         <div className="w-24 border-b-[1px] border-b-white">
           <h2 className=" pt-10 font-extrabold font-stolzl text-tertiary text-left tracking-widest">
             MAJOR EVENTS
           </h2>
         </div>
-        <ul className="text-grey1">
+        <ul className="text-grey1 text-left cursor-pointer">
           <li className="mt-1">Cosmos</li>
           <li className="mt-1">Destival</li>
           <li className="mt-1">Requiem</li>
@@ -57,7 +27,7 @@ export default function Events() {
             MINOR EVENTS
           </h2>
         </div>
-        <ul className="text-grey1">
+        <ul className="text-grey1 text-left cursor-pointer">
           <li>Cosmos</li>
           <li>Destival</li>
           <li>Destival</li>
@@ -127,7 +97,7 @@ export default function Events() {
                 <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden ">
                   {minorevent.eventNames.map((eventname, _i) => (
                     <div key={_i} className=" mx-10  ">
-                      <div className="relative bg-black mb-20 hover:scale-125 transition ease-in-out duration-300 group ">
+                      <div className="relative bg-black mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
                         <Image
                           src={eventname.image}
                           height={450}
@@ -145,6 +115,15 @@ export default function Events() {
                             exercitationem nemo animi inventore ipsa iste
                             officia!
                           </span>
+                        </div>
+                      </div>
+                      <div className="w-full h-20">
+                        <div className="text-white font-Montserrat">
+                          {`${eventname.eventName}`}
+                        </div>
+                        <div className="text-grey1 font-Montserrat">
+                          {eventname.date}
+                          <span>{` | ${eventname.time}`}</span>
                         </div>
                       </div>
                     </div>
