@@ -3,6 +3,12 @@ import React from 'react';
 import Header from '../components/Header';
 import jubin from '../assets/images/artists/jubin.jpg';
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Carousel } from 'react-responsive-carousel';
+import reviveono from '../assets/images/reviveono.png';
+import onoLogo from '../assets/images/onoLogo.jpg';
+import CustomCarousel from '../components/CustomCarousel';
+import MajorArtistCard from '../components/MajorArtistCard';
 
 export default function Artist() {
   const artists = [
@@ -20,64 +26,120 @@ export default function Artist() {
   return (
     <div className="">
       <Header />
-      <nav className="fixed h-full w-1/3 text-white text-center shadow-sm shadow-primaryWhite">
-        <h1 className="text-6xl pt-40 ">Artists</h1>
-        <p className="pt-4 mx-14">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique
-          repellat sed, explicabo culpa odit cumque reiciendis enim aliquam
-          dolorum quasi quia consequuntur, itaque vitae illum. Iure, est?
-          Voluptatem deserunt rem architecto ex atque nam perferendis officia
-          sunt, dolorum enim nihil maiores placeat inventore, quis nostrum ipsum
-          consequuntur blanditiis harum adipisci!
-        </p>
-      </nav>
-      <main className="w-2/3 h-full float-right flex flex-col items-center">
-        <div className="mt-40 ">
-          {artists.map((artist, _i) => (
-            <div
-              key={_i}
-              className=" h-96 w-[45vw] ml-10 bg-white mb-28 col-span-3 place-self-center flex flex-col items-center border-2 border-black shadow-2xl"
-            >
-              <div className="relative h-40 w-40 rounded-full z-10 -translate-y-20">
-                <Image
-                  src={artist.image}
-                  layout="fill"
-                  objectFit="cover"
-                  className=" rounded-full "
-                  alt="artist image"
-                />
+
+      <Carousel
+        autoPlay
+        infiniteLoop
+        interval="4000"
+        showIndicators={false}
+        showStatus={false}
+        showThumbs={false}
+      >
+        <div className="w-screen h-screen">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            loading="lazy"
+            src="/placeholder-artist.jpg"
+            alt="banner 3"
+          />
+          <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
+            <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
+              <div className=" flex flex-col items-center justify-center">
+                <div className=" flex flex-col text-6xl font-stolzl mx-32">
+                  LIFAFA
+                  <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
+                    14TH October
+                  </span>
+                </div>
               </div>
-              <h2 className="text-2xl -translate-y-10 text-blue-600 font-medium">
-                {artist.name}
-              </h2>
-              <p className="text-black max-w-xl text-xs">
-                Lorem ipsum dolor sit, amet consectetur loda elit. Maiores
-                doloremque beatae tempora corrupti vel, quae est saepe accusamus
-                asperiores consequuntur officiis architecto, vitae voluptate
-                nihil blanditiis ipsa non quia hic! Sapiente dolorum praesentium
-                saepe laborum harum illo reprehenderit veniam, repellat quis
-                minus nemo, temporibus iusto cum, assumenda eligendi facere at
-                quo asperiores impedit? Sit eveniet, temporibus veniam mollitia
-                nemo accusamus neque dolor dolorem recusandae assumenda tenetur,
-                cumque optio illum omnis commodi amet blanditiis magnam, magni
-              </p>
-              <div className="flex w-full justify-around px-40">
-                <button className="flex text-xs bg-green-500 rounded-full border border-black mt-5 items-center justify-center text-black px-14 py-2 shadow-black shadow-sm ">
-                  <a>Listen on Spotify</a>
-                  <ArrowUpRightIcon className="h-4 w-4" />
-                </button>
-                <button className="flex text-xs bg-black rounded-full border border-black mt-5 items-center justify-center text-white px-14 py-2 shadow-black shadow-sm ">
-                  <a href={artist.instaLink}>Check Instagram</a>
-                  <ArrowUpRightIcon className="h-4 w-4" />
-                </button>
+              <div className="hidden w-3/4 md:flex flex-col justify-center">
+                <div className="w-3/4 font-Jost font-light text-left text-2xl">
+                  The term Oneiros was officially used to personify dreams by
+                  ancient Greeks. However, Manipal University Jaipur takes the
+                </div>
+                <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
+                  View Artist
+                </div>
               </div>
             </div>
-          ))}
+          </div>
         </div>
-        <div className="h-10 w-10 ml-10 bg-red-600 mt-36 "></div>
-        <div className="h-10 w-10 ml-10 bg-red-600 mt-36 "></div>
-        <div className="h-10 w-10 ml-10 bg-red-600 mt-36 "></div>
-      </main>
+        <div className="w-screen h-screen">
+          <Image
+            layout="fill"
+            objectFit="cover"
+            loading="lazy"
+            src="/placeholder-artist.jpg"
+            alt="banner 3"
+          />
+          <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
+            <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
+              <div className=" flex flex-col items-center justify-center">
+                <div className=" flex flex-col text-6xl font-stolzl mx-32">
+                  LIFAFA
+                  <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
+                    14TH October
+                  </span>
+                </div>
+              </div>
+              <div className="hidden w-3/4 md:flex flex-col justify-center">
+                <div className="w-3/4 font-Jost font-light text-left text-2xl">
+                  The term Oneiros was officially used to personify dreams by
+                  ancient Greeks. However, Manipal University Jaipur takes the
+                </div>
+                <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
+                  View Artist
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Carousel>
+
+      <div className="bg-artist">
+        <div className=" h-screen flex flex-col items-center justify-around pt-20">
+          <span className="inline-block text-8xl font-freak">3 DAYS</span>
+          <span
+            className="inline-block text-8xl font-freak"
+            style={{ letterSpacing: '2vw' }}
+          >
+            20+ ARTISTS
+          </span>
+          <div className="uppercase bg-white bg-opacity-20 py-2.5 px-8 cursor-pointer text-md">
+            View Artist
+          </div>
+          <div className="h-40 w-80 relative">
+            <Image
+              className=""
+              layout="fill"
+              objectFit="contain"
+              src={reviveono}
+            />
+          </div>
+        </div>
+      </div>
+      <div>
+        {/* <div className="flex flex-col justify-start items-start my-20 max-w-7xl mx-auto ">
+          <div>
+            <div className="max-w-[10rem] relative">
+              <Image
+                src={onoLogo}
+                width={200}
+                height={30}
+                layout="fixed"
+                objectFit="cover"
+              />
+            </div>
+            <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
+              Major Artists
+            </span>
+          </div>
+        </div> */}
+      </div>
+      <CustomCarousel />
+      <br /><br />
+      {/* <MajorArtistCard /> */}
     </div>
   );
 }
