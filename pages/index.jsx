@@ -113,7 +113,7 @@ export default function Home() {
               </div>
             </div> */}
         </div>
-        <div className=" flex flex-col justify-start items-start mt-60 h-screen max-w-7xl mx-auto">
+        {/* <div className=" flex flex-col justify-start items-start mt-60 h-screen max-w-7xl mx-auto">
           <div className="max-w-xs">
             <Image src={onoevents} />
           </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <div className="bg-red-700 h-full w-[180px]"></div>
             <div className="bg-red-700 h-full w-[180px]"></div>
           </div>
-        </div>
+        </div> */}
       </main>
     </div>
   );
