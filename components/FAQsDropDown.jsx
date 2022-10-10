@@ -5,51 +5,51 @@ export default function Faqs(props) {
     title: 'Frequently Asked Questions',
     rows: [
       {
-        title: 'Lorem ipsum dolor sit amet,',
-        content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. In sed tempor sem. Aenean vel turpis feugiat,
-              ultricies metus at, consequat velit. Curabitur est nibh, varius in tellus nec, mattis pulvinar metus.
-              In maximus cursus lorem, nec laoreet velit eleifend vel. Ut aliquet mauris tortor, sed egestas libero interdum vitae.
-              Fusce sed commodo purus, at tempus turpis.`,
-      },
-      {
-        title: 'Nunc maximus, magna at ultricies elementum',
+        title: 'Which artist will perform at Oneiros 2022?',
         content:
-          'Nunc maximus, magna at ultricies elementum, risus turpis vulputate quam, vitae convallis ex tortor sed dolor.',
+          'The leading light of Oneiros will be announced soon on our social media handles.',
       },
       {
-        title: 'Curabitur laoreet, mauris vel blandit fringilla',
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: 'Which students are allowed to apply?',
+        content:
+          'Students from all colleges across the globe are welcome to apply.',
       },
       {
-        title: 'Curabitur laoreet, mauris vel blandit fringilla',
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: 'What will be the location of the ongoing events?',
+        content: `All participants will be informed about the time and location of the relevant events by the corresponding organizers.`,
       },
       {
-        title: 'Curabitur laoreet, mauris vel blandit fringilla',
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: 'Can I register for multiple events?',
+        content: `Yes, you can register for as many events as you want but their timings might overlap.`,
       },
       {
-        title: 'Curabitur laoreet, mauris vel blandit fringilla',
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: 'What is Oneiros?',
+        content: ` Oneiros is the annual cultural fest of Manipal University Jaipur.`,
       },
       {
-        title: 'Curabitur laoreet, mauris vel blandit fringilla',
-        content: `Curabitur laoreet, mauris vel blandit fringilla, leo elit rhoncus nunc, ac sagittis leo elit vel lorem.
-            Fusce tempor lacus ut libero posuere viverra. Nunc velit dolor, tincidunt at varius vel, laoreet vel quam.
-            Sed dolor urna, lobortis in arcu auctor, tincidunt mattis ante. Vivamus venenatis ultricies nibh in volutpat.
-            Cras eu metus quis leo vestibulum feugiat nec sagittis lacus.Mauris vulputate arcu sed massa euismod dignissim. `,
+        title: 'Where will the events be conducted?',
+        content: `All events will be conducted inside the University campus.`,
+      },
+      {
+        title: 'Is there any sort of transport faility available?',
+        content: `No, make sure to acquire tranport before attending the fest.`,
+      },
+      {
+        title: 'How will the experience of Oneiros be?',
+        content: `The experience will be integrating, enriching and fulfilling to say the least. `,
+      },
+      {
+        title: 'In which mode will the events be conducted?',
+        content: `All events will be conducted in offline mode.`,
+      },
+      {
+        title: 'What options are available for having meals at Oneiros?',
+        content: `There will be abundant food vendours available throughout campus during the fest.`,
+      },
+      {
+        title:
+          'Is there a registration fee for participating in events in Oneiros?',
+        content: `Refer events tab for more information.`,
       },
     ],
   };
