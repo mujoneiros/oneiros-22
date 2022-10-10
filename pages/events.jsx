@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import Header from '../components/Header';
-import { minorevents } from '../data/events';
+import { minorevents, majorEvents } from '../data/events';
 import './../styles//events.module.css';
 
 const data = [
@@ -40,105 +40,122 @@ export default function Events() {
   return (
     <div>
       <Header />
-      {/* <nav className="fixed h-full w-1/4 text-black font-Montserrat text-center shadow-sm shadow-primaryWhite bg-secondaryWhite">
-        <h1 className="text-6xl pt-40 font-extrabold ">EVENTS</h1>
-        <ul className="mt-12 flex flex-col items-center cursor-pointer">
-          <h2 className="font-bold text-3xl" onClick={() => setMajor(!major)}>
-            Major Events
+      <Image src="/EventsIntro.png" width={1920} height={314} />
+      <nav className="-translate-y-1.5 fixed h-[30rem] w-1/4 font-Montserrat text-center bg-secondary text-white flex flex-col items-start pl-10 overflow-y-scroll pb-10">
+        <div className="w-24 border-b-[1px] border-b-white">
+          <h2 className=" pt-10 font-extrabold font-stolzl text-tertiary text-left tracking-widest">
+            MAJOR EVENTS
           </h2>
-          <ul className={major ? '' : 'hidden'}>
-            <li className="flex flex-row justify-center items-center transition ease-in delay-75">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Cosmos</span>
-            </li>
-            <li className="flex flex-row justify-center items-center transition ease-in delay-1000">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Cosmos</span>
-            </li>
-            <li className="flex flex-row justify-center items-center">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Cosmos</span>
-            </li>
-          </ul>
-          <li class="hov">
-            <span className="font-bold text-3xl pt-5 font-Montserrat">
-              Major Events
-            </span>
-            <ul class="main font-Montserrat font-medium ">
-              <li className="flex transition ease-in-out justify-center items-center hover:scale-110">
-                <Link href="/MajorEvents">
-                  <a className="items-center mx-2 inline-flex cursor-pointer">
-                    <span>Destival</span>
-                  </a>
-                </Link>
-              </li>
-              <li className="flex justify-center items-center">
-                <span>Destival</span>
-              </li>
-              <li className="flex justify-center items-center">
-                <span>Destival</span>
-              </li>
-              <li className="flex justify-center items-center">
-                <span>Destival</span>
-              </li>
-            </ul>
-          </li>
-          <h2
-            className="font-bold text-3xl pt-32"
-            onClick={() => setMinor(!minor)}
-          >
-            Minor Events
+        </div>
+        <ul className="text-grey1">
+          <li className="mt-1">Cosmos</li>
+          <li className="mt-1">Destival</li>
+          <li className="mt-1">Requiem</li>
+        </ul>
+        <div className="w-24 border-b-[1px] border-b-white pt-10">
+          <h2 className=" font-extrabold font-stolzl text-tertiary text-left tracking-widest">
+            MINOR EVENTS
           </h2>
-          <ul className={minor ? 'transition ease-out delay-75' : 'hidden'}>
-            <li className="flex flex-row justify-center items-center">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Destival</span>
-            </li>
-            <li className="flex flex-row justify-center items-center">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Destival</span>
-            </li>
-            <li className="flex flex-row justify-center items-center">
-              <ChevronRightIcon height={10} width={10} />
-              <span>Destival</span>
-            </li>
-          </ul>
+        </div>
+        <ul className="text-grey1">
+          <li>Cosmos</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
+          <li>Destival</li>
         </ul>
       </nav>
-      <main className="w-3/4 grid grid-cols-4 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
-        {minorevents.payload.map((minorevent, _i) => (
-          <>
-            <div className="text-4xl col-span-4 place-self-start font-Montserrat uppercase font-semibold ml-8">
-              {minorevent.name}
-            </div>
-
-            {minorevent.eventNames.map((eventname, _i) => (
-              <div key={_i} className="flex justify-center items-center mx-10">
-                <div className="relative bg-black mb-20 hover:scale-125 transition ease-in-out duration-300 group ">
+      <main className="h-96 overflow-y-scroll flex flex-col items-end w-3/4 float-right">
+        <div className=" text-white mr-auto ml-20">
+          <h2 className="font-stolzl text-accent text-5xl pb-5">
+            MAJOR EVENTS
+          </h2>
+          <h4 className="text-grey1 pb-6">6 Events</h4>
+          <div className="w-full">
+            {majorEvents.map((majorEvent, _i) => (
+              <div className="flex mb-5">
+                <div className="">
                   <Image
-                    src={eventname.image}
-                    height={450}
-                    width={360}
-                    className="absolute group-hover:brightness-50 duration-75 ease-in"
+                    src={majorEvent.image}
+                    height={450 * 1.5}
+                    width={360 * 1.5}
                   />
-                  <div className="absolute z-10 bg-black w-4 h-4"></div>
-                  <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
-                    <span className="capitalize text-base">
-                      {eventname.eventName}
-                    </span>
-                    <span className="text-2xs font-extralight  ">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Rem cumque minima consequuntur labore exercitationem nemo
-                      animi inventore ipsa iste officia!
-                    </span>
+                </div>
+                <div className="flex flex-col items-start pl-5 pr-40 justify-between">
+                  <h2 className="font-stolzl text-5xl uppercase">
+                    {majorEvent.name}
+                  </h2>
+                  <h2>
+                    Event by{' '}
+                    <span className="font-bold">{majorEvent.eventby}</span>
+                  </h2>
+                  <h4 className="text-grey1">{majorEvent.description}</h4>
+                  <div className="text-accent text-5xl font-stolzl">
+                    {majorEvent.date}
                   </div>
-                </Link>
+                  <div className="text-grey1 text-3xl font-stolzl">
+                    {majorEvent.time}
+                  </div>
+                  <a href={majorEvent.link} className="inline-block w-full">
+                    <button className="w-full h-20 p-5 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center">
+                      Register
+                    </button>
+                  </a>
+                </div>
               </div>
             ))}
-          </>
-        ))}
-      </main> */}
-      <br />
+          </div>
+        </div>
+        <div className=" text-white mr-auto ml-20">
+          <h2 className="font-stolzl text-accent text-5xl pb-5">
+            MINOR EVENTS
+          </h2>
+          <h4 className="text-grey1 ">6 Events</h4>
+          <div className=" float-right pt-10">
+            {minorevents.payload.map((minorevent, _i) => (
+              <a
+                href="https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353"
+                key={_i}
+              >
+                <div className="text-4xl w-3/4 place-self-center font-Montserrat uppercase font-semibold ml-8 mb-10">
+                  {minorevent.name}
+                </div>
+                <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden ">
+                  {minorevent.eventNames.map((eventname, _i) => (
+                    <div key={_i} className=" mx-10  ">
+                      <div className="relative bg-black mb-20 hover:scale-125 transition ease-in-out duration-300 group ">
+                        <Image
+                          src={eventname.image}
+                          height={450}
+                          width={360}
+                          className="absolute group-hover:brightness-50 duration-75 ease-in"
+                        />
+                        <div className="absolute z-10 bg-black w-4 h-4"></div>
+                        <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
+                          <span className="capitalize text-base">
+                            {eventname.eventName}
+                          </span>
+                          <span className="text-2xs font-extralight  ">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing
+                            elit. Rem cumque minima consequuntur labore
+                            exercitationem nemo animi inventore ipsa iste
+                            officia!
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </main>
+      {/* <br />
       <br />
       <Image src="/EventsIntro.png" width={1920} height={314} />
       <div
@@ -215,41 +232,7 @@ export default function Events() {
             </button>
           </div>
         ))}
-      </div>
-      <main className="w-3/4 grid grid-cols-4 h-full float-right items-center pt-24 gap-y-10 gap-x-5">
-        {minorevents.payload.map((minorevent, _i) => (
-          <>
-            <div className="text-4xl col-span-4 place-self-start font-Montserrat uppercase font-semibold ml-8">
-              {minorevent.name}
-            </div>
-
-            {minorevent.eventNames.map((eventname, _i) => (
-              <div key={_i} className="flex justify-center items-center mx-10">
-                <div className="relative bg-black mb-20">
-                  <Image
-                    src={eventname.image}
-                    height={450}
-                    width={360}
-                    className=""
-                  />
-                  <div className=" z-10 bg-black w-4 h-4"></div>
-                  <div className=" z-20 bottom-0 ">
-                    <span className="capitalize text-base">
-                      {eventname.eventName}
-                    </span>
-                    <br />
-                    <span className="text-2xs font-extralight  ">
-                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                      Rem cumque minima consequuntur labore exercitationem nemo
-                      animi inventore ipsa iste officia!
-                    </span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </>
-        ))}
-      </main>
+      </div> */}
     </div>
   );
 }

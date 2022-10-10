@@ -77,3 +77,16 @@ export const minorevents = {
     },
   ],
 };
+
+export const majorEvents = [
+  {
+    name: 'Cosmos',
+    image: '/majorevents/cosmos.png',
+    eventby: 'Cosmos',
+    description:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+    date: '14th Oct',
+    time: '7:20PM',
+    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+  },
+];
