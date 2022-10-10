@@ -160,8 +160,8 @@ export default function Home() {
           </div>
           <div className="font-Montserrat">
             <h3 className="text-lg font-bold">Latest updates on</h3>
-            <div className="h-5 w-5 text-sm">
-              instagram
+            <div className=" h-5 w-20 text-sm">
+              <Image src={'/insta.png'} height={20} width={20} />
               <span className="">/mujoniros</span>
             </div>
           </div>
