@@ -11,6 +11,7 @@ import onoevents from '../assets/images/onoevents.png';
 import { landingPageEvents } from '../data/events';
 import { ArrowUpIcon, BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import CustomCarousel from '../components/CustomCarousel';
 
 export default function Home() {
   const goToTop = () => {
@@ -96,14 +97,14 @@ export default function Home() {
         <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden mx-20 pb-10">
           {landingPageEvents.map((eventname, _i) => (
             <div key={_i} className=" mx-10  ">
-              <div className="relative bg-black mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
+              <div className="relative bg-secondary mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
                 <Image
                   src={eventname.image}
                   height={450}
                   width={360}
                   className="absolute group-hover:brightness-50 duration-75 ease-in"
                 />
-                <div className="absolute z-10 bg-black w-4 h-4"></div>
+                {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
                 <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                   <span className="capitalize text-base">{eventname.name}</span>
                   <span className="text-2xs font-extralight  ">
@@ -130,6 +131,7 @@ export default function Home() {
             </button>
           </Link>
         </div>
+        <CustomCarousel />
       </main>
       <footer className="bg-footer relative">
         <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">

@@ -1,34 +1,39 @@
 export const artists = {
   resources: [
     {
-      title: 'Find me on Twitter',
+      title: 'Akash Mehta',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/any',
+      imageUrl: '/artists/akashmehta.png',
     },
     {
-      title: 'Welcome to Ark Labs',
+      title: 'DJ Chetas',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/animals',
+      imageUrl: '/artists/djchetas.png',
     },
     {
-      title: 'Some sort of third title',
+      title: 'DJ Shaan',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/architecture',
+      imageUrl: '/artists/djshaan.png',
     },
     {
-      title: 'Super item number the last',
+      title: 'Hardy Sandhu',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/tech',
+      imageUrl: '/artists/hardysandhu.png',
     },
     {
-      title: 'Super item number the last',
+      title: 'Jubin Nautiyal',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/tech',
+      imageUrl: '/artists/jubin.jpg',
     },
     {
-      title: 'Super item number the last',
+      title: 'Shirley Setia',
       link: '',
-      imageUrl: 'https://placeimg.com/300/300/tech',
+      imageUrl: '/artists/shirleysetia.png',
+    },
+    {
+      title: 'Local Train',
+      link: '',
+      imageUrl: '/artists/localtrain.png',
     },
   ],
 };

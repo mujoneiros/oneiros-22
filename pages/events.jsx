@@ -126,10 +126,7 @@ export default function Events() {
                             {eventname.eventName}
                           </span>
                           <span className="text-2xs font-extralight  ">
-                            Lorem ipsum dolor sit, amet consectetur adipisicing
-                            elit. Rem cumque minima consequuntur labore
-                            exercitationem nemo animi inventore ipsa iste
-                            officia!
+                            {eventname.description}
                           </span>
                         </div>
                       </div>

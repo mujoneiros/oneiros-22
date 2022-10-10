@@ -4,6 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { artistplaceholder } from '../public/artistplaceholder.png';
 const imgLink = '/artists/jubin.jpg';
+import { artists } from '../data/artists';
 
 export default function CustomCarousel() {
   const responsive = {
@@ -28,110 +29,130 @@ export default function CustomCarousel() {
       <div>
         <span
           className="inline-block text-5xl font-freak"
-          style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
+          style={{
+            letterSpacing: '1vw',
+            paddingLeft: '6.5rem',
+            color: '#59EDEA',
+          }}
         >
-          MAJOR ARTISTS
+          PREVIOUS ARTIST
         </span>
         <br />
         <br />
         <Carousel responsive={responsive}>
+          {/* {artists.resources.map((artist, _i) => {
+            <div className="h-[20.8125rem] ">
+              <Image
+                src={artist.imageUrl}
+                layout="fill"
+                objectFit="contain"
+                className=""
+              />
+              <span
+                className="inline-block text-5xl font-freak relative top-40 left-40"
+                style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
+              >
+                {artist.title}
+              </span>
+            </div>;
+          })} */}
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/akashmehta.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/djchetas.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/djshaan.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/hardysandhu.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/jubin.jpg'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/shirleysetia.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
           <div className="h-[20.8125rem] ">
             <Image
-              src={imgLink}
+              src={'/artists/localtrain.png'}
               layout="fill"
               objectFit="contain"
               className=""
             />
-            <span
+            {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
               style={{ letterSpacing: '1vw', paddingLeft: '6.5rem' }}
             >
               MAJOR ARTISTS
-            </span>
+            </span> */}
           </div>
         </Carousel>
       </div>
