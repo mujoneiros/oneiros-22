@@ -85,7 +85,7 @@ export default function Events() {
                     {majorEvent.time}
                   </div>
                   <a href={majorEvent.link} className="inline-block w-full">
-                    <button className="w-full h-20 p-5 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center">
+                    <button className="w-full h-20 p-4 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center transition delay-75 hover:ease-in-out ">
                       Register
                     </button>
                   </a>
