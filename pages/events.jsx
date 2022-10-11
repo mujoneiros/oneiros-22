@@ -111,7 +111,7 @@ export default function Events() {
             <h2 className="font-stolzl text-accent text-2xl md:text-5xl pb-5">
               MINOR EVENTS
             </h2>
-            <h4 className="text-grey1 ">40+ Events</h4>
+            <h4 className="text-grey1">40+ Events</h4>
             <div className=" float-right pt-10">
               {minorevents.payload.map((minorevent, _i) => (
                 <a href="" key={_i}>
@@ -141,8 +141,11 @@ export default function Events() {
                               <span className="capitalize text-base font-semibold">
                                 {eventname.eventName}
                               </span>
-                              <span className="text-2xs font-medium">
-                                {eventname.description}
+                              <span className="text-2xs font-medium ">
+                                {eventname.description.length > 250
+                                  ? eventname.description.substring(0, 249) +
+                                    '...'
+                                  : eventname.description}
                               </span>
                             </div>
                           </div>
