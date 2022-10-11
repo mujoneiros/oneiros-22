@@ -83,15 +83,15 @@ export default function Home() {
             >
               History of oneiros
             </span>
-            <Image src={reviveono} className="" />
+            <Image src={reviveono} className="" alt="image" />
           </div>
           <div>
-            <Image src={onoprev} className="" />
+            <Image src={onoprev} className="" alt="image" />
           </div>
         </div>
         <div className=" flex flex-col justify-start items-start mt-60 max-w-7xl mx-auto">
           <div className="max-w-xs">
-            <Image src={onoevents} />
+            <Image src={onoevents} alt="image" />
           </div>
         </div>
         <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden mx-20 pb-10">
@@ -103,6 +103,7 @@ export default function Home() {
                   height={450}
                   width={360}
                   className="absolute group-hover:brightness-50 duration-75 ease-in"
+                  alt="event image"
                 />
                 {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
                 <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
@@ -140,6 +141,7 @@ export default function Home() {
               src={'/comeandexperience.png'}
               layout="fill"
               objectFit="contain"
+              alt="experience"
             />
           </div>
 
@@ -150,7 +152,12 @@ export default function Home() {
           </Link>
         </div>
         <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
-          <Image src={'/onorevive1416.png'} height={100} width={200} />
+          <Image
+            src={'/onorevive1416.png'}
+            height={100}
+            width={200}
+            alt="revive"
+          />
           <div className="h-40 w-40 flex flex-col justify-center items-center">
             <div
               className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
@@ -163,7 +170,7 @@ export default function Home() {
           <div className="font-Montserrat">
             <h3 className="text-lg font-bold">Latest updates on</h3>
             <div className=" h-5 w-20 text-sm">
-              <Image src={'/insta.png'} height={20} width={20} />
+              <Image src={'/insta.png'} height={20} width={20} alt="insta" />
               <span className="">/mujoniros</span>
             </div>
           </div>

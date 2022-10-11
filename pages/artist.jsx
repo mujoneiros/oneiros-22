@@ -109,6 +109,7 @@ export default function Artist() {
               layout="fill"
               objectFit="contain"
               src={reviveono}
+              alt={reviveono}
             />
           </div>
         </div>
@@ -139,6 +140,7 @@ export default function Artist() {
               src={'/comeandexperience.png'}
               layout="fill"
               objectFit="contain"
+              alt="come and experience"
             />
           </div>
 
@@ -149,7 +151,12 @@ export default function Artist() {
           </Link>
         </div>
         <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
-          <Image src={'/onorevive1416.png'} height={100} width={200} />
+          <Image
+            src={'/onorevive1416.png'}
+            height={100}
+            width={200}
+            alt="revive"
+          />
           <div className="h-40 w-40 flex flex-col justify-center items-center">
             <div
               className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"

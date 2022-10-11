@@ -1,18 +1,18 @@
-import React from 'react'
-import Image from 'next/image'
-const imgLink = "/artists/jubin.jpg"
+import React from 'react';
+import Image from 'next/image';
+const imgLink = '/artists/jubin.jpg';
 
 const MajorArtistCard = () => {
   return (
     <div>
-        <h1>MAJOR ARTISTS</h1>
+      <h1>MAJOR ARTISTS</h1>
+      <div>
         <div>
-            <div>
-                <Image src={imgLink} layout={'fill'} />
-            </div>
+          <Image src={imgLink} layout={'fill'} alt="major artist" />
         </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default MajorArtistCard
+export default MajorArtistCard;

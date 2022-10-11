@@ -17,7 +17,7 @@ export default function Events() {
     <div>
       <Header />
       <div className="w-full h-40 relative mt-14">
-        <Image src="/3days.png" layout="fill" objectFit="cover" />
+        <Image src="/3days.png" layout="fill" objectFit="cover" alt="3days" />
       </div>
       <nav className="-translate-y-1.5 fixed h-[30rem] w-1/4 font-Montserrat text-center bg-secondary text-white flex flex-col items-start pl-10 overflow-y-scroll pb-10 ">
         <div className="w-24 border-b-[1px] border-b-white">
@@ -28,6 +28,7 @@ export default function Events() {
         <ul className="text-grey1 text-left cursor-pointer">
           {majorEvents.map((eventname, _i) => (
             <li
+              key={_i}
               className="mt-1"
               onClick={() => scrollDown(`${eventname.name}${_i}`)}
             >
@@ -43,6 +44,7 @@ export default function Events() {
         <ul className="text-grey1 text-left cursor-pointer">
           {minorevents.payload.map((eventname, _i) => (
             <li
+              key={_i}
               className="mt-1"
               onClick={() => scrollDown(`${eventname.name}${_i}`)}
             >
@@ -62,12 +64,13 @@ export default function Events() {
           <h4 className="text-grey1 pb-6">6 Events</h4>
           <div className="w-full">
             {majorEvents.map((majorEvent, _i) => (
-              <div className="flex mb-5">
+              <div className="flex mb-5" key={_i}>
                 <div className="" id={`${majorEvent.name}${_i}`}>
                   <Image
                     src={majorEvent.image}
                     height={450 * 1.5}
                     width={360 * 1.5}
+                    alt="major event image"
                   />
                 </div>
                 <div className="flex flex-col items-start pl-5 pr-40 justify-between">
@@ -88,6 +91,7 @@ export default function Events() {
                   <a
                     href={majorEvent.link}
                     target="_blank"
+                    rel="noreferrer"
                     className="inline-block w-full"
                   >
                     <button className="w-full h-20 p-4 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center transition delay-75 hover:ease-in-out ">
@@ -106,10 +110,7 @@ export default function Events() {
           <h4 className="text-grey1 ">40+ Events</h4>
           <div className=" float-right pt-10">
             {minorevents.payload.map((minorevent, _i) => (
-              <a
-                href="https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353"
-                key={_i}
-              >
+              <a href="" key={_i}>
                 <div
                   className="text-4xl w-3/4 place-self-center font-Montserrat uppercase font-semibold ml-8"
                   id={`${minorevent.name}${_i}`}
@@ -119,13 +120,14 @@ export default function Events() {
                 <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden pt-10">
                   {minorevent.eventNames.map((eventname, _i) => (
                     <div key={_i} className="mx-10">
-                      <a href={eventname.link} target="_blank">
+                      <a href={eventname.link} target="_blank" rel="noreferrer">
                         <div className="relative bg-secondary mb-5 hover:scale-125 transition ease-in-out duration-300 group  ">
                           <Image
                             src={eventname.image}
                             height={450}
                             width={360}
                             className="absolute group-hover:brightness-50 duration-75 ease-in z-20"
+                            alt="image"
                           />
                           <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                             <span className="capitalize text-base font-semibold">

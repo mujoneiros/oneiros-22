@@ -62,6 +62,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -76,6 +77,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -90,6 +92,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -104,6 +107,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -118,6 +122,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -132,6 +137,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"
@@ -146,6 +152,7 @@ export default function CustomCarousel() {
               layout="fill"
               objectFit="contain"
               className=""
+              alt="image"
             />
             {/* <span
               className="inline-block text-5xl font-freak relative top-40 left-40"

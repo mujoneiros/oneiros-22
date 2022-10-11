@@ -41,7 +41,12 @@ export default function Sponsors() {
       <Header />
       <br />
       <br />
-      <Image src="/prev_sponsors_head.png" width={1920} height={314} />
+      <Image
+        src="/prev_sponsors_head.png"
+        width={1920}
+        height={314}
+        alt="previous sponsors"
+      />
       <h1 style={{ color: '#A5C1D1' }} className="text-center mt-6 text-3xl">
         Talent Showcase Partner
       </h1>
@@ -51,6 +56,7 @@ export default function Sponsors() {
           objectFit="contain"
           width={880}
           height={182}
+          alt="mood indigo"
         />
       </div>
       <h1 style={{ color: '#A5C1D1' }} className="text-center mt-6 text-3xl">
@@ -62,6 +68,7 @@ export default function Sponsors() {
           objectFit="contain"
           width={880}
           height={273}
+          alt="sas"
         />
       </div>
       <div className="title_sponsors">
