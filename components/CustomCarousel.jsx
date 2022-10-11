@@ -26,12 +26,12 @@ export default function CustomCarousel() {
   };
   return (
     <div>
-      <div>
+      <div className="text-center md:text-left">
         <span
-          className="inline-block text-5xl font-freak"
+          className="inline-block text-xl mt-10  md:text-5xl font-freak md:pl-[6.5rem]"
           style={{
             letterSpacing: '1vw',
-            paddingLeft: '6.5rem',
+            // paddingLeft: '6.5rem',
             color: '#59EDEA',
           }}
         >
@@ -39,7 +39,10 @@ export default function CustomCarousel() {
         </span>
         <br />
         <br />
-        <Carousel responsive={responsive}>
+        <Carousel
+          responsive={responsive}
+          className="-translate-y-14 md:translate-y-0"
+        >
           {/* {artists.resources.map((artist, _i) => {
             <div className="h-[20.8125rem] ">
               <Image

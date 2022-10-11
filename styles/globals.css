@@ -66,6 +66,19 @@ nav::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+@media (max-width: 768px) {
+  .bg-footer {
+    background-image: url('../public/footerImage.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    opacity: 0.8;
+    height: 20vh;
+    width: 100%;
+  }
+}
+
 .bg-artist {
   background-image: url('../public/artistbackground.png');
   background-size: cover;
