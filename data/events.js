@@ -125,7 +125,7 @@ export const minorevents = {
           eventName: 'GroundZero',
           description:
             'Show-off your exceptional beat sense and killer musicality in the official hip-hop dance battle of MUJ, Ground Zero. This is a hip-hop style underground battle event wherein professional crews and college teams go against each other to win an attractive prize pool.',
-          image: '/minorEvents/Coreografia/GroundZero.png',
+          image: '/minorEvents/Coreografia/Groundzero.png',
           date: '14th Oct',
           time: '4PM',
           link: 'https://unstop.com/p/ground-zero-hip-hop-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457159',
@@ -214,7 +214,7 @@ export const minorevents = {
           eventName: 'Ad-Mad',
           description:
             'Ad-mad is an advertisement-making competition to showcase creativity in marketing products and services. The event is an opportunity to bring out the individual and collective talent of the participants.The Topic for the advertisement making competition will be given to the participating teams at 7pm on 14th October that’s when their timer will start, and they’ll have to start ideating and planning their storyline which will be followed by their shooting and editing of the advertisement which will be then submitted by them before 10pm on 16th October. The team can be of 3 to 6 members and the duration of the advertisement should be 2 – 6 minutes only.',
-          image: '/minorEvents/Cinefilia/Ad-Mad.png',
+          image: '/minorEvents/Cinefilia/Ad-mad.png',
           date: '14th-16th Oct',
           time: '',
           link: 'https://unstop.com/p/ad-mad-advertisement-making-competition-oneiros-22-revive-manipal-university-mu-jaipur-454996',
