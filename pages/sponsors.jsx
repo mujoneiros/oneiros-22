@@ -63,7 +63,7 @@ export default function Sponsors() {
               <div key={_i} className="flex justify-center items-center">
                 <Link href={sponsor.link}>
                   <a target={"_blank"}>
-                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10 ml-10 mr-10">
+                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10 ml-40 mr-40">
                       <Image
                         src={sponsor.image}
                         layout="fill"
