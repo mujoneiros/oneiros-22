@@ -55,7 +55,7 @@ export default function Events() {
           </ul>
         </nav>
         <main
-          className=" md:h-[30rem] overflow-y-scroll flex flex-col items-end md:w-3/4 md:float-right w-96 "
+          className=" md:h-[69vh] overflow-y-scroll overflow-x-hidden flex flex-col items-end md:w-3/4 md:float-right w-[100vw] "
           id="blueScroll"
         >
           <div className=" text-white mr-auto ml-5 md:ml-20">
