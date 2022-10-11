@@ -76,7 +76,7 @@ nav::-webkit-scrollbar-thumb {
 }
 
 .grad {
-  background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1));
+  background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(6, 16, 28, 1));
 }
 
 .main {

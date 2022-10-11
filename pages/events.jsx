@@ -7,15 +7,10 @@ import { minorevents, majorEvents } from '../data/events';
 import './../styles//events.module.css';
 
 export default function Events() {
-  const ref = useRef(null);
-  const handleClick = () => {
-    ref.current?.scrollIntoView({ behaviour: 'smooth' });
-  };
-
   const scrollDown = (el) => {
     document.getElementById('blueScroll').scrollTo({
       top: document.getElementById(el).offsetTop - 250,
-      behaviour: 'smooth',
+      behavior: 'smooth',
     });
   };
   return (
@@ -32,7 +27,10 @@ export default function Events() {
         </div>
         <ul className="text-grey1 text-left cursor-pointer">
           {majorEvents.map((eventname, _i) => (
-            <li className="mt-1" onClick={() => scrollDown(eventname.name)}>
+            <li
+              className="mt-1"
+              onClick={() => scrollDown(`${eventname.name}${_i}`)}
+            >
               {eventname.name}
             </li>
           ))}
@@ -44,7 +42,10 @@ export default function Events() {
         </div>
         <ul className="text-grey1 text-left cursor-pointer">
           {minorevents.payload.map((eventname, _i) => (
-            <li className="mt-1" onClick={() => scrollDown(eventname.name)}>
+            <li
+              className="mt-1"
+              onClick={() => scrollDown(`${eventname.name}${_i}`)}
+            >
               {eventname.name}
             </li>
           ))}
@@ -62,7 +63,7 @@ export default function Events() {
           <div className="w-full">
             {majorEvents.map((majorEvent, _i) => (
               <div className="flex mb-5">
-                <div className="" id={majorEvent.name}>
+                <div className="" id={`${majorEvent.name}${_i}`}>
                   <Image
                     src={majorEvent.image}
                     height={450 * 1.5}
@@ -84,7 +85,11 @@ export default function Events() {
                   <div className="text-grey1 text-3xl font-stolzl">
                     {majorEvent.time}
                   </div>
-                  <a href={majorEvent.link} className="inline-block w-full">
+                  <a
+                    href={majorEvent.link}
+                    target="_blank"
+                    className="inline-block w-full"
+                  >
                     <button className="w-full h-20 p-4 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center transition delay-75 hover:ease-in-out ">
                       Register
                     </button>
@@ -98,7 +103,7 @@ export default function Events() {
           <h2 className="font-stolzl text-accent text-5xl pb-5">
             MINOR EVENTS
           </h2>
-          <h4 className="text-grey1 ">6 Events</h4>
+          <h4 className="text-grey1 ">40+ Events</h4>
           <div className=" float-right pt-10">
             {minorevents.payload.map((minorevent, _i) => (
               <a
@@ -107,29 +112,31 @@ export default function Events() {
               >
                 <div
                   className="text-4xl w-3/4 place-self-center font-Montserrat uppercase font-semibold ml-8"
-                  id={minorevent.name}
+                  id={`${minorevent.name}${_i}`}
                 >
                   {minorevent.name}
                 </div>
                 <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden pt-10">
                   {minorevent.eventNames.map((eventname, _i) => (
                     <div key={_i} className="mx-10">
-                      <div className="relative bg-secondary mb-5 hover:scale-125 transition ease-in-out duration-300 group  ">
-                        <Image
-                          src={eventname.image}
-                          height={450}
-                          width={360}
-                          className="absolute group-hover:brightness-50 duration-75 ease-in z-20"
-                        />
-                        <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
-                          <span className="capitalize text-base">
-                            {eventname.eventName}
-                          </span>
-                          <span className="text-2xs font-extralight  ">
-                            {eventname.description}
-                          </span>
+                      <a href={eventname.link} target="_blank">
+                        <div className="relative bg-secondary mb-5 hover:scale-125 transition ease-in-out duration-300 group  ">
+                          <Image
+                            src={eventname.image}
+                            height={450}
+                            width={360}
+                            className="absolute group-hover:brightness-50 duration-75 ease-in z-20"
+                          />
+                          <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
+                            <span className="capitalize text-base font-semibold">
+                              {eventname.eventName}
+                            </span>
+                            <span className="text-2xs font-medium">
+                              {eventname.description}
+                            </span>
+                          </div>
                         </div>
-                      </div>
+                      </a>
                       <div className="w-full h-20">
                         <div className="text-white font-Montserrat">
                           {`${eventname.eventName}`}

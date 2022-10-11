@@ -10,6 +10,7 @@ export const minorevents = {
           image: '/minorEvents/Litmus/Ingenium.png',
           date: '14th-15th Oct',
           time: '',
+          link: 'https://unstop.com/p/ingenium-the-debating-conte-oneiros-22-revive-manipal-university-mu-jaipur-457026',
         },
         {
           eventName: 'Connecting the Threads',
@@ -18,6 +19,7 @@ export const minorevents = {
           image: '/minorEvents/Litmus/connectingthethreads.png',
           date: '16th Oct',
           time: '',
+          link: 'https://unstop.com/p/connecting-the-threads-story-competition-oneiros-22-revive-manipal-university-mu-jaipur-457259',
         },
         {
           eventName: 'Plane Crash',
@@ -26,6 +28,7 @@ export const minorevents = {
           image: '/minorEvents/Litmus/planecrash.png',
           date: '15th Oct',
           time: '',
+          link: 'https://unstop.com/p/plane-crash-competition-oneiros-22-revive-manipal-university-mu-jaipur-457291',
         },
         {
           eventName: 'Voiceover',
@@ -34,6 +37,16 @@ export const minorevents = {
           image: '/minorEvents/Litmus/voiceover.png',
           date: '16th Oct',
           time: '7',
+          link: '',
+        },
+        {
+          eventName: 'iSketch',
+          description:
+            "Literature has no limits but imaginations goes beyond that sometimes. Mixing two of the most magical, mesmerizing and beautiful forms of expression when we come up with Pictionary we get a proof of the fact how writers and artists go together. Words and art not only sit together but also play with our creativity to create phenomenal outcomes. Pictionary let's us translate idioms, phrases etc into an entirely different language of art creating beautiful illustrations of the person's interpretation.",
+          image: '/minorEvents/Litmus/isketch.png',
+          date: '14th Oct',
+          time: '',
+          link: 'https://unstop.com/p/isketch-the-pictionary-contest-oneiros-22-revive-manipal-university-mu-jaipur-457290',
         },
       ],
     },
@@ -47,6 +60,7 @@ export const minorevents = {
           image: '/minorEvents/Tmc/woodstock.png',
           date: '14th Oct',
           time: '1:30pm to 3:30pm',
+          link: 'https://unstop.com/p/woodstock-instrumental-competition-oneiros-22-revive-manipal-university-mu-jaipur-454749',
         },
         {
           eventName: 'Ensemble',
@@ -55,6 +69,7 @@ export const minorevents = {
           image: '/minorEvents/Tmc/ensemble.png',
           date: '14th Oct',
           time: '1pm to 3pm',
+          link: 'https://unstop.com/p/ensemble-group-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454254',
         },
         {
           eventName: 'Dhwani',
@@ -63,6 +78,7 @@ export const minorevents = {
           image: '/minorEvents/Tmc/dhwani.png',
           date: '15th Oct',
           time: '10am to 12 noon',
+          link: 'https://unstop.com/p/dhwani-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454122',
         },
         {
           eventName: 'Saptak',
@@ -71,6 +87,7 @@ export const minorevents = {
           image: '/minorEvents/Tmc/saptak.png',
           date: '15th Oct',
           time: '2pm to 4pm',
+          link: 'https://unstop.com/p/saptak-the-classical-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454717',
         },
         {
           eventName: 'Octaves',
@@ -79,14 +96,16 @@ export const minorevents = {
           image: '/minorEvents/Tmc/octaves.png',
           date: '16th Oct',
           time: '10am to 12 noon',
+          link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
         },
         {
-          eventName: 'Rapsody',
+          eventName: 'Rhapsody',
           description:
             'For all the rap and beatboxing aficionados out there, Rapsody is the place to be: this is where the true game is, hop on!',
           image: '/minorEvents/Tmc/rapsody.png',
           date: '16th Oct',
           time: '2pm to 4pm',
+          link: 'https://unstop.com/p/rapsody-rappers-oneiros-22-revive-manipal-university-mu-jaipur-454653',
         },
       ],
     },
@@ -100,6 +119,7 @@ export const minorevents = {
           image: '/minorEvents/Coreografia/Showcase.png',
           date: '14th Oct',
           time: '4PM',
+          link: 'https://unstop.com/p/showcase-competition-oneiros-22-revive-manipal-university-mu-jaipur-457224',
         },
         {
           eventName: 'GroundZero',
@@ -108,6 +128,7 @@ export const minorevents = {
           image: '/minorEvents/Coreografia/GroundZero.png',
           date: '14th Oct',
           time: '4PM',
+          link: 'https://unstop.com/p/ground-zero-hip-hop-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457159',
         },
         {
           eventName: 'Nextar',
@@ -116,6 +137,7 @@ export const minorevents = {
           image: '/minorEvents/Coreografia/Nextar.png',
           date: '16th Oct',
           time: '10AM',
+          link: 'https://unstop.com/p/nextar-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457258',
         },
       ],
     },
@@ -129,6 +151,7 @@ export const minorevents = {
           image: '/minorEvents/Cosmos/Infinity and Beyond.jpeg',
           date: '16th Oct',
           time: '5PM',
+          link: '',
         },
       ],
     },
@@ -142,22 +165,27 @@ export const minorevents = {
           image: '/minorEvents/Aperture/Focus.png',
           date: '14th-16th Oct',
           time: '10Am to 5pm',
+          link: 'https://unstop.com/p/focus-an-art-exhibition-oneiros-22-revive-manipal-university-mu-jaipur-456677',
         },
         {
           eventName: 'SCAPE GOAT',
           description:
             "Escape Room is a game where a group of friends get locked into a space to play some puzzles or mysteries, stimulate their minds to solve them. They'll get a time limit of 10-15 minutes in which they will have to cleverly use their wits to quickly search for clues and reach the final destination, thereby winning the game within the limited duration. The teams which succeed in doing this will be rewarded with goodies from our end.",
+
           image: '/minorEvents/Aperture/scapegoat.png',
           date: '14th-16th Oct',
           time: '10 AM to 5 PM',
+          link: 'https://unstop.com/p/scape-goat-an-escape-room-oneiros-22-revive-manipal-university-mu-jaipur-453660',
         },
         {
-          eventName: 'PIC’ ME',
+          eventName: 'PIC ME',
           description:
             'Under the Photobooth “Pic Me”, we will be clicking and printing pictures of people attending Oneiros. Photography will consist of both digital and polaroid, and many props will also be available to liven up the photo and create lasting memories. As a one-of-a-kind event, we hope to attract a lot of footfalls. This booth will also help in promoting the event at a big scale as people will be sharing the pictures on social media. We want to make sure the participants enjoy their time and want to revisit next year.',
+
           image: '/minorEvents/Aperture/picme.png',
           date: '14th-16th Oct',
           time: '10am to 12 noon',
+          link: 'https://unstop.com/p/pic-me-capturing-memories-oneiros-22-revive-manipal-university-mu-jaipur-456688',
         },
         {
           eventName: 'POSTER PORTAL',
@@ -166,6 +194,7 @@ export const minorevents = {
           image: '/minorEvents/Aperture/posterportal.png',
           date: '14th-16th Oct',
           time: '3pm to 5pm',
+          link: 'https://unstop.com/p/poster-portal-a-design-booth-oneiros-22-revive-manipal-university-mu-jaipur-456668',
         },
         {
           eventName: 'ONE SHOT',
@@ -174,6 +203,7 @@ export const minorevents = {
           image: '/minorEvents/Aperture/oneshot.png',
           date: '15th Oct',
           time: '3:00 PM to 5:00 PM',
+          link: 'https://unstop.com/p/one-shot-portrait-photography-workshop-oneiros-22-revive-manipal-university-mu-jaipur-456694',
         },
       ],
     },
@@ -187,37 +217,37 @@ export const minorevents = {
           image: '/minorEvents/Cinefilia/Ad-Mad.png',
           date: '14th-16th Oct',
           time: '',
-        },
-        {
-          eventName: 'Pictionary',
-          description: '',
-          image: '/minorEvents/Cinefilia/Pictionary.png',
-          date: '14th Oct',
-          time: '7:20PM',
+          link: 'https://unstop.com/p/ad-mad-advertisement-making-competition-oneiros-22-revive-manipal-university-mu-jaipur-454996',
         },
         {
           eventName: 'Ek Zubaani',
           description:
             "Cinefilia will be hosting Ek-Zubani, a monologue competition. The power that an impactful monologue holds is often paralleled to a few of the most famous speeches. 'Ek-zubaani' will make you feel alive and connected to your emotionswhile performing.Ek-Zubani is a monologue competition. The time limit of each monologue should be 4-6 minutes. The competition will be judged based oncharacter portrayal, poise, body language, content and delivery. Background music for the act can be brought in a pen drive but recorded vocals are notallowed. Other descriptions and rule book will be mailed to the joining teams.",
+
           image: '/minorEvents/Cinefilia/Ek zubaani.png',
           date: '14th Oct',
           time: '4:30PM',
+          link: 'https://unstop.com/p/ek-zubani-monologue-competition-oneiros-22-revive-manipal-university-mu-jaipur-455046',
         },
         {
           eventName: 'Rangmanch',
           description:
             'The Rangmanch has always been the focal point of an artist’s world. We intend to provide a stage for every artist. We intend to establish and promote the essence of theatre in the current fast-paced world.Rangmanch is a stage play competition with the cast size of 5-15 members, excluding the directors. The time limit of each play should be 1 hour. The competition will be judged by Jaipur theatre circuit veterans. The use of additional props should be informed at least 5 days before the event date. Other descriptions and rule book will be mailedto the joining teams.',
+
           image: '/minorEvents/Cinefilia/Rangmanch.png',
           date: '15th Oct',
           time: '10AM- 4PM',
+          link: 'https://unstop.com/p/rangmanch-stage-play-competition-oneiros-22-revive-manipal-university-mu-jaipur-455049',
         },
         {
           eventName: 'Sadak Naam',
           description:
             "The Street Play Competition as a part of Oneiros. Street plays are those mirrors of society that are used as a means of communication to disseminate social and political themes and to raise awareness among the public. 'Sadaknaam' hence encapsulates these chants, beats, and voices Sadaknaam is a street play competition with the cast size of 20 members, including the directors and instrumentalists. The time limit of each play should be 15-25 minutes. Students will be given the chance to showcase their skills in acting, scripting and teamwork and perform a street play of any theme of their choice. Students from MUJ and participating universities will be performing their respective plays in front of a judges panel. Other descriptions and rule book will be mailed to the joining teams.",
+
           image: '/minorEvents/Cinefilia/Sadaknaam.png',
           date: '14th Oct',
           time: '',
+          link: 'https://unstop.com/p/sadaknaam-street-play-competition-oneiros-22-revive-manipal-university-mu-jaipur-455086',
         },
       ],
     },
@@ -230,6 +260,7 @@ export const minorevents = {
           image: '/minorEvents/Enactus/Grapevine Buzz.png',
           date: '15th Oct',
           time: '',
+          link: 'https://unstop.com/p/grapevine-buzz-smear-away-your-thoughts-oneiros-22-revive-manipal-university-mu-jaipur-455943',
         },
         {
           eventName: 'Mindsway',
@@ -237,6 +268,7 @@ export const minorevents = {
           image: '/minorEvents/Enactus/Mindsway.png',
           date: '14th Oct',
           time: '',
+          link: 'https://unstop.com/p/mind-sway-change-my-mind-oneiros-22-revive-manipal-university-mu-jaipur-455941',
         },
       ],
     },
@@ -244,12 +276,13 @@ export const minorevents = {
       name: 'Enviro+Abhigya',
       eventNames: [
         {
-          eventName: 'Webinar:Lumpy Skin Disease (LSD)',
+          eventName: 'THE OUTBREAK OF LUMPY SKIN DISEASE IN COWS',
           description:
             'This webinar is designed to provide existing information on the various aspects of the disease such as its clinicopathology, transmission, epidemiology, diagnosis, prevention and control measures, and the potential role of wildlife in the further spread of disease. The webinar will attract over 60 enthusiasts who would get to learn about this burning outbreak.',
           image: '/minorEvents/Enviro + Abhigya/webinar.png',
           date: '14th Oct',
           time: '11AM-12PM',
+          link: 'https://unstop.com/p/the-outbreak-of-lumpy-skin-disease-in-cows-oneiros-22-revive-manipal-university-mu-jaipur-455484',
         },
       ],
     },
@@ -263,6 +296,7 @@ export const minorevents = {
           image: '/minorEvents/Estrella_LearnIT_Glitch!/Homebase.png',
           date: '14th-16th Oct',
           time: '',
+          link: '',
         },
       ],
     },
@@ -270,12 +304,13 @@ export const minorevents = {
       name: 'Finance Club',
       eventNames: [
         {
-          eventName: 'Hunter Games',
+          eventName: 'The Hunter Games',
           description:
             'A group of mighty travelers is lost while hunting for a treasure , they discover themselves in a dark shady forest with a mysterious mansion near by . As they step forward , they were caught by some mystifying people in a masked red attire , who claimed themselves as Money Heist crew ! To find a key for the most shielded safe the travelers were vigorously taken in by crew . Last but not the least , what about escaping the scene , Can they pull it off ?',
           image: '/minorEvents/Finance Club/thehuntergames.png',
           date: '14th-16th Oct',
           time: '',
+          link: 'https://unstop.com/p/the-hunter-gamesthe-lost-room-treasure-hunt-oneiros-22-revive-manipal-university-mu-jaipur-455487',
         },
       ],
     },
@@ -289,6 +324,7 @@ export const minorevents = {
           image: '/minorEvents/HerCampus/stree.jpg',
           date: '16th Oct',
           time: '3-5PM',
+          link: '',
         },
       ],
     },
@@ -302,6 +338,7 @@ export const minorevents = {
           image: '/minorEvents/Humans of Manipal Jaipur/manipalmela.png',
           date: '',
           time: '',
+          link: '',
         },
       ],
     },
@@ -315,6 +352,7 @@ export const minorevents = {
           image: '/minorEvents/MarkSoc/Redemption.jpg',
           date: '14th-15th Oct',
           time: '11AM onwards',
+          link: '',
         },
         {
           eventName: 'Scavenger Hunt',
@@ -323,6 +361,7 @@ export const minorevents = {
           image: '/minorEvents/MarkSoc/Scavenger Hunt.png',
           date: '14th Oct',
           time: '',
+          link: 'https://unstop.com/p/scavenger-hunt-marksoc-oneiros-22-revive-manipal-university-mu-jaipur-456800',
         },
       ],
     },
@@ -336,6 +375,7 @@ export const minorevents = {
           image: '/minorEvents/MoM/Groove on zumba.png',
           date: '15th Oct',
           time: '3PM',
+          link: 'https://unstop.com/p/groove-on-zumba-dance-event-oneiros-22-revive-manipal-university-mu-jaipur-455157',
         },
       ],
     },
@@ -346,9 +386,11 @@ export const minorevents = {
           eventName: 'Panache',
           description:
             'A battle of wits & glory! 3 rounds from all-time classic game shows that you love & watch. Traverse the jeopardy & resolve the feud on the path to victory.',
+
           image: '/minorEvents/Panacea/Panache.png',
           date: '15th Oct',
           time: '3PM-5PM',
+          link: 'https://unstop.com/p/panache-a-battle-of-wits-glory-oneiros-22-revive-manipal-university-mu-jaipur-455970',
         },
       ],
     },
@@ -362,6 +404,7 @@ export const minorevents = {
           image: '/minorEvents/Scribbles/I like it, I paint it.png',
           date: '14th Oct',
           time: '7:20PM',
+          link: 'https://unstop.com/p/i-like-it-i-paint-it-canvas-painting-event-oneiros-22-revive-manipal-university-mu-jaipur-455938',
         },
         {
           eventName: 'Lights Up',
@@ -370,6 +413,7 @@ export const minorevents = {
           image: '/minorEvents/Scribbles/Lights Up.png',
           date: '14th Oct',
           time: '7:20PM',
+          link: 'https://unstop.com/p/lights-up-paper-lanterns-competition-oneiros-22-revive-manipal-university-mu-jaipur-455904',
         },
         {
           eventName: 'The Right Side- Art Gallery',
@@ -378,6 +422,7 @@ export const minorevents = {
           image: '/minorEvents/Scribbles/the right side.png',
           date: '14th Oct',
           time: '7:20PM',
+          link: 'https://unstop.com/p/the-right-side-art-gallery-oneiros-22-revive-manipal-university-mu-jaipur-455841',
         },
         {
           eventName: 'YOURS TOTE(ALLY)',
@@ -386,6 +431,7 @@ export const minorevents = {
           image: '/minorEvents/Scribbles/Yours tote(ally) .png',
           date: '14th Oct',
           time: '7:20PM',
+          link: 'https://unstop.com/p/yours-toteally-oneiros-22-revive-manipal-university-mu-jaipur-455772',
         },
       ],
     },
@@ -398,30 +444,30 @@ export const majorEvents = [
     image: '/majorevents/cosmos.png',
     eventby: 'Cosmos',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+      'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
     date: '14th Oct',
     time: '7:20PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: '',
   },
   {
     name: 'Destival',
     image: '/majorevents/destival.png',
     eventby: 'Destival',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+      'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
     date: '15th Oct',
     time: '7:30PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: 'https://unstop.com/p/destival-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457125',
   },
   {
     name: 'Requiem',
     image: '/majorevents/requiem.png',
     eventby: 'Requiem',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+      'Requiem is Oneiros’ very own Battle of Bands. Providing a chance for the top five qualifiers to compete for the coveted top spot, this event is bound to be a sight to behold (or rather say, hear).',
     date: '14th Oct',
     time: '6:15PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: '',
   },
 ];
 export const landingPageEvents = [
@@ -429,30 +475,28 @@ export const landingPageEvents = [
     name: 'Cosmos',
     image: '/majorevents/cosmos.png',
     eventby: 'Cosmos',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+    description: '',
     date: '14th Oct',
     time: '7:20PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: '',
   },
   {
     name: 'Destival',
     image: '/majorevents/destival.png',
     eventby: 'Destival',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+      'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
     date: '15th Oct',
     time: '7:30PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: 'https://unstop.com/p/destival-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457125',
   },
   {
     name: 'Requiem',
     image: '/majorevents/requiem.png',
     eventby: 'Requiem',
-    description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nibh pellentesque id cras molestie. In mauris risus elementum nibh rutrum.',
+    description: '',
     date: '14th Oct',
     time: '6:15PM',
-    link: 'https://unstop.com/p/octaves-western-solo-singing-competition-oneiros-22-revive-manipal-university-mu-jaipur-454353',
+    link: '',
   },
 ];
