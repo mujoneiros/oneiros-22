@@ -7,7 +7,7 @@ export const minorevents = {
           eventName: 'INGENIUM- THE DEBATING CONTEST',
           description:
             'Putting forward one’s point with grace and confidence is of the utmost importance in our competitive world and so LITMUS brings a literary-based event during ONEIROS to make our youth more aware and shape them into confident and opinionated humans.',
-          image: '/minorEvents/Litmus/Ingenium.png',
+          image: '/minorEvents/Litmus/ingenium.png',
           date: '14th-15th Oct',
           time: '',
           link: 'https://unstop.com/p/ingenium-the-debating-conte-oneiros-22-revive-manipal-university-mu-jaipur-457026',
