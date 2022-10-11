@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background-color: #000000;
+  background-color: #06101c;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -55,6 +55,17 @@ nav::-webkit-scrollbar-thumb {
   width: 100%;
 }
 
+.bg-footer {
+  background-image: url('../public/footerImage.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  opacity: 0.8;
+  height: 100vh;
+  width: 100%;
+}
+
 .bg-artist {
   background-image: url('../public/artistbackground.png');
   background-size: cover;
@@ -65,7 +76,7 @@ nav::-webkit-scrollbar-thumb {
 }
 
 .grad {
-  background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(0, 0, 0, 1));
+  background: linear-gradient(rgba(0, 0, 0, 0) 5%, rgba(6, 16, 28, 1));
 }
 
 .main {

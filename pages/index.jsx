@@ -9,11 +9,17 @@ import reviveono from '../assets/images/reviveono.png';
 import onoprev from '../assets/svgs/onoprev.svg';
 import onoevents from '../assets/images/onoevents.png';
 import { landingPageEvents } from '../data/events';
-
-import { BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
+import { ArrowUpIcon, BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
+import CustomCarousel from '../components/CustomCarousel';
 
 export default function Home() {
+  const goToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
   return (
     <div>
       <Head>
@@ -77,28 +83,29 @@ export default function Home() {
             >
               History of oneiros
             </span>
-            <Image src={reviveono} className="" />
+            <Image src={reviveono} className="" alt="image" />
           </div>
           <div>
-            <Image src={onoprev} className="" />
+            <Image src={onoprev} className="" alt="image" />
           </div>
         </div>
         <div className=" flex flex-col justify-start items-start mt-60 max-w-7xl mx-auto">
           <div className="max-w-xs">
-            <Image src={onoevents} />
+            <Image src={onoevents} alt="image" />
           </div>
         </div>
-        <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden mx-20">
+        <div className="grid grid-cols-3 grid-flow-row gap-y-10 gap-x-5 overflow-hidden mx-20 pb-10">
           {landingPageEvents.map((eventname, _i) => (
             <div key={_i} className=" mx-10  ">
-              <div className="relative bg-black mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
+              <div className="relative bg-secondary mb-5 hover:scale-125 transition ease-in-out duration-300 group ">
                 <Image
                   src={eventname.image}
                   height={450}
                   width={360}
                   className="absolute group-hover:brightness-50 duration-75 ease-in"
+                  alt="event image"
                 />
-                <div className="absolute z-10 bg-black w-4 h-4"></div>
+                {/* <div className="absolute z-10 bg-black w-4 h-4"></div> */}
                 <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                   <span className="capitalize text-base">{eventname.name}</span>
                   <span className="text-2xs font-extralight  ">
@@ -125,7 +132,50 @@ export default function Home() {
             </button>
           </Link>
         </div>
+        <CustomCarousel />
       </main>
+      <footer className="bg-footer relative">
+        <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">
+          <div className="relative w-[60rem] h-96 ">
+            <Image
+              src={'/comeandexperience.png'}
+              layout="fill"
+              objectFit="contain"
+              alt="experience"
+            />
+          </div>
+
+          <Link href={'/events'}>
+            <button className="uppercase mr-auto mt-6 bg-white bg-opacity-40 py-4 px-8 cursor-pointer mx-auto place-self-center col-span-3">
+              Explore Events
+            </button>
+          </Link>
+        </div>
+        <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
+          <Image
+            src={'/onorevive1416.png'}
+            height={100}
+            width={200}
+            alt="revive"
+          />
+          <div className="h-40 w-40 flex flex-col justify-center items-center">
+            <div
+              className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
+              onClick={goToTop}
+            >
+              <ArrowUpIcon className="text-accent h-5 w-5" />
+            </div>
+            GO TO TOP
+          </div>
+          <div className="font-Montserrat">
+            <h3 className="text-lg font-bold">Latest updates on</h3>
+            <div className=" h-5 w-20 text-sm">
+              <Image src={'/insta.png'} height={20} width={20} alt="insta" />
+              <span className="">/mujoniros</span>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }
