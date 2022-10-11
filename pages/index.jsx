@@ -40,7 +40,7 @@ export default function Home() {
       <main className="overflow-hidden">
         <div className="hidden md:flex justify-center items-center border-y border-black py-10 lg:py-5 text-white h-screen bg-landing w-full"></div>
 
-        {/* <div className="w-full h-96 grad -translate-y-96 z-30 absolute shadow-inner "></div> */}
+        <div className="hidden md:block w-full h-96 grad -translate-y-96 z-30 absolute shadow-inner "></div>
         <div className="pt-5 max-w-4xl flex flex-col mx-auto justify-center items-center gap-9 md:pt-10 md:first-letter:h-screen">
           <Image
             src={abouteventono}
@@ -79,7 +79,7 @@ export default function Home() {
           </div>
         </div>
         <div className=" flex flex-col justify-start items-start mt-10 md:mt-60 max-w-7xl mx-auto">
-          <div className="ml-10 w-28 md:max-w-xs">
+          <div className="mx-auto mb-4 md:mx-0 max-w-[5rem] md:max-w-xs">
             <Image src={onoevents} alt="image" />
           </div>
         </div>
