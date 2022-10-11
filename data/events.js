@@ -441,7 +441,7 @@ export const minorevents = {
 export const majorEvents = [
   {
     name: 'Cosmos',
-    image: '/majorevents/cosmos.png',
+    image: '/majorEvents/cosmos.png',
     eventby: 'Cosmos',
     description:
       'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
@@ -451,7 +451,7 @@ export const majorEvents = [
   },
   {
     name: 'Destival',
-    image: '/majorevents/destival.png',
+    image: '/majorEvents/destival.png',
     eventby: 'Destival',
     description:
       'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
@@ -461,7 +461,7 @@ export const majorEvents = [
   },
   {
     name: 'Requiem',
-    image: '/majorevents/requiem.png',
+    image: '/majorEvents/requiem.png',
     eventby: 'Requiem',
     description:
       'Requiem is Oneiros’ very own Battle of Bands. Providing a chance for the top five qualifiers to compete for the coveted top spot, this event is bound to be a sight to behold (or rather say, hear).',
@@ -473,7 +473,7 @@ export const majorEvents = [
 export const landingPageEvents = [
   {
     name: 'Cosmos',
-    image: '/majorevents/cosmos.png',
+    image: '/majorEvents/cosmos.png',
     eventby: 'Cosmos',
     description: '',
     date: '14th Oct',
@@ -482,7 +482,7 @@ export const landingPageEvents = [
   },
   {
     name: 'Destival',
-    image: '/majorevents/destival.png',
+    image: '/majorEvents/destival.png',
     eventby: 'Destival',
     description:
       'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
@@ -492,7 +492,7 @@ export const landingPageEvents = [
   },
   {
     name: 'Requiem',
-    image: '/majorevents/requiem.png',
+    image: '/majorEvents/requiem.png',
     eventby: 'Requiem',
     description: '',
     date: '14th Oct',
