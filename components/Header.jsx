@@ -8,10 +8,10 @@ export default function Header() {
   // const navItems = [{ name: 'Events', link: '/events' }];
   return (
     <div>
-      <header className="fixed top-0 flex sm:px-4 min-w-full bg-transparent text-white z-1 justify-around items-center h-14 z-50 pt-4">
-        <div className="relative flex z-2 h-10 ">
+      <header className="fixed top-0 flex sm:px-4 min-w-full bg-transparent text-white z-1 justify-between md:justify-around items-center h-14 z-50 pt-4 px-4">
+        <div className="relative z-2 h-10 pt-2 ">
           <Link href="/" passHref={true}>
-            <a>
+            <a className="hidden md:inline-block">
               <Image
                 src={onoLogo}
                 width={200}
@@ -22,8 +22,20 @@ export default function Header() {
               />
             </a>
           </Link>
+          <Link href="/" passHref={true}>
+            <a className="inline-block md:hidden">
+              <Image
+                src={oneirosLogo}
+                width={50}
+                height={20}
+                layout="fixed"
+                objectFit="cover"
+                alt="oneiros"
+              />
+            </a>
+          </Link>
         </div>
-        <div className="flex justify-between w-2/5">
+        <div className="flex justify-between md:w-2/5">
           <Link href="/events">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>Events</h3>
@@ -31,7 +43,7 @@ export default function Header() {
           </Link>
           <Link href="/artist">
             <a className="items-center mx-2 inline-flex cursor-pointer">
-              <h3 className="ml-2 hidden flex-1 lg:inline-flex cursor-pointer">
+              <h3 className="ml-2 hidden flex-1 md:inline-flex cursor-pointer">
                 Artists
               </h3>
             </a>
@@ -57,7 +69,7 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="uppercase text-accent cursor-pointer neonText ">
+        <div className="hidden md:block uppercase text-accent cursor-pointer neonText ">
           Register Now
         </div>
       </header>
