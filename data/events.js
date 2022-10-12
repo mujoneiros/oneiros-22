@@ -401,7 +401,7 @@ export const minorevents = {
           eventName: 'I like it, I paint it',
           description:
             'A Canvas Painting Event which brings people together who love the vibe of a small canvas with an easel.',
-          image: '/minorEvents/Scribbles/I like it, I paint it.png',
+          image: '/minorEvents/Scribbles/paintit.PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/i-like-it-i-paint-it-canvas-painting-event-oneiros-22-revive-manipal-university-mu-jaipur-455938',
@@ -410,7 +410,7 @@ export const minorevents = {
           eventName: 'Lights Up',
           description:
             'Celebrating this festive season with art and a challenge to create the most unique and creative Paper Lanterns.',
-          image: '/minorEvents/Scribbles/Lights Up.png',
+          image: '/minorEvents/Scribbles/Lights Up.PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/lights-up-paper-lanterns-competition-oneiros-22-revive-manipal-university-mu-jaipur-455904',
@@ -419,7 +419,7 @@ export const minorevents = {
           eventName: 'The Right Side- Art Gallery',
           description:
             'Showcase of all the artworks of talented artists from Scribbles to gain recognition and exposure. As well as a platform for small business owners to attract target customers for their products. ',
-          image: '/minorEvents/Scribbles/the right side.png',
+          image: '/minorEvents/Scribbles/the right side.PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/the-right-side-art-gallery-oneiros-22-revive-manipal-university-mu-jaipur-455841',
@@ -428,7 +428,7 @@ export const minorevents = {
           eventName: 'YOURS TOTE(ALLY)',
           description:
             'Calling out all aesthetes and artsy people who carry their life in a tote bag.The participants will be given a tote bag + all the required art supplies.',
-          image: '/minorEvents/Scribbles/Yours tote(ally) .png',
+          image: '/minorEvents/Scribbles/Yours tote(ally).PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/yours-toteally-oneiros-22-revive-manipal-university-mu-jaipur-455772',
