@@ -57,14 +57,17 @@ export default function Faqs(props) {
     bgColor: 'rgb(4,7,19)',
     titleTextColor: 'white',
     rowTitleColor: 'white',
-    rowContentColor: 'white',
+    rowTitleTextSize: '25px',
+    rowContentTextSize:'20px',
+    rowContentPaddingTop: '35px',
+    rowContentColor: '#c3c8c9',
     arrowColor: 'white',
   };
 
   const config = {
-    // animate: true,
+    animate: true,
     // arrowIcon: "V",
-    // tabFocus: true
+    tabFocus: true
   };
   return (
     <div>
