@@ -410,7 +410,7 @@ export const minorevents = {
           eventName: 'Lights Up',
           description:
             'Celebrating this festive season with art and a challenge to create the most unique and creative Paper Lanterns.',
-          image: '/minorEvents/Scribbles/Lights Up.PNG',
+          image: '/minorEvents/Scribbles/Lightsup.PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/lights-up-paper-lanterns-competition-oneiros-22-revive-manipal-university-mu-jaipur-455904',
@@ -419,7 +419,7 @@ export const minorevents = {
           eventName: 'The Right Side- Art Gallery',
           description:
             'Showcase of all the artworks of talented artists from Scribbles to gain recognition and exposure. As well as a platform for small business owners to attract target customers for their products. ',
-          image: '/minorEvents/Scribbles/the right side.PNG',
+          image: '/minorEvents/Scribbles/Therightside.PNG',
           date: '14th Oct',
           time: '7:20PM',
           link: 'https://unstop.com/p/the-right-side-art-gallery-oneiros-22-revive-manipal-university-mu-jaipur-455841',
