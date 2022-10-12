@@ -5,7 +5,7 @@ import React, { useRef, useState } from 'react';
 import Header from '../components/Header';
 import { minorevents, majorEvents } from '../data/events';
 import './../styles//events.module.css';
-
+import {Helmet} from 'react-helmet'
 export default function Events() {
   const scrollDown = (el) => {
     document.getElementById('blueScroll').scrollTo({
@@ -15,6 +15,9 @@ export default function Events() {
   };
   return (
     <div className="overflow-hidden w-full">
+      <Helmet>
+        <title>Events</title>
+      </Helmet>
       <Header />
       <div className="w-full h-40 relative mt-14 block">
         <Image src="/3days.png" layout="fill" objectFit="cover" alt="3days" />

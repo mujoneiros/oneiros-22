@@ -2,10 +2,13 @@ import React from 'react';
 import Image from 'next/image';
 import Header from '../components/Header';
 import FAQsDropDown from '../components/FAQsDropDown';
-
+import {Helmet} from 'react-helmet'
 export default function Faqs() {
   return (
     <div style={{ backgroundColor: 'rgb(4,7,19)' }}>
+      <Helmet>
+        <title>FAQs</title>
+      </Helmet>
       <Header />
       <br />
       <br />

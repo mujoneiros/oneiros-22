@@ -5,7 +5,7 @@ import React from 'react';
 import Header from '../components/Header';
 import SponsorImage from '../components/SponsorImage';
 import { sponsors } from '../data/sponsors';
-
+import {Helmet} from 'react-helmet'
 export default function Sponsors() {
   return (
     // <div className="">
@@ -38,6 +38,9 @@ export default function Sponsors() {
     // </div>
 
     <div style={{ backgroundImage: 'linear-gradient(#030912, #317695)' }}>
+      <Helmet>
+        <title>Sponsors</title>
+      </Helmet>
       <Header />
       <br />
       <br />

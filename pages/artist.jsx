@@ -9,7 +9,8 @@ import reviveono from '../assets/images/reviveono.png';
 import onoLogo from '../assets/images/onoLogo.jpg';
 import CustomCarousel from '../components/CustomCarousel';
 import Link from 'next/link';
-
+import Logo from "../assets/svgs/OneirosLogo.svg"
+import {Helmet} from 'react-helmet'
 export default function Artist() {
   const goToTop = () => {
     window.scrollTo({
@@ -19,9 +20,21 @@ export default function Artist() {
   };
   return (
     <div className="">
+      <Helmet>
+        <title>Artists</title>
+      </Helmet>
       <Header />
-
-      <Carousel
+      <Image
+        src={"/OneirosLogo.png"}
+        layout = "fill"
+        className='-z-10 opacity-5 sd:opacity-0'
+        alt="major event image"
+      />
+      <div className='text-center align-middle'>
+      <h1 className='text-center object-center text-8xl mt-60 font-extrabold font-stolzl'>Coming Soon</h1>
+      </div>
+      
+      {/* <Carousel
         autoPlay
         infiniteLoop
         interval="4000"
@@ -115,22 +128,7 @@ export default function Artist() {
         </div>
       </div>
       <div>
-        {/* <div className="flex flex-col justify-start items-start my-20 max-w-7xl mx-auto ">
-          <div>
-            <div className="max-w-[10rem] relative">
-              <Image
-                src={onoLogo}
-                width={200}
-                height={30}
-                layout="fixed"
-                objectFit="cover"
-              />
-            </div>
-            <span className="uppercase text-6xl text-accent font-stolzl pl-1.5 tracking-widest">
-              Major Artists
-            </span>
-          </div>
-        </div> */}
+        
       </div>
       <CustomCarousel />
       <footer className="bg-footer relative">
@@ -174,7 +172,7 @@ export default function Artist() {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </div>
   );
 }
