@@ -9,8 +9,8 @@ import reviveono from '../assets/images/reviveono.png';
 import onoLogo from '../assets/images/onoLogo.jpg';
 import CustomCarousel from '../components/CustomCarousel';
 import Link from 'next/link';
-import Logo from "../assets/svgs/OneirosLogo.svg"
-import {Helmet} from 'react-helmet'
+import Logo from '../assets/svgs/OneirosLogo.svg';
+import { Helmet } from 'react-helmet';
 export default function Artist() {
   const goToTop = () => {
     window.scrollTo({
@@ -25,15 +25,17 @@ export default function Artist() {
       </Helmet>
       <Header />
       <Image
-        src={"/OneirosLogo.png"}
-        layout = "fill"
-        className='-z-10 opacity-5 sd:opacity-0'
+        src={'/OneirosLogo.png'}
+        layout="fill"
+        className="-z-10 opacity-5 sd:opacity-0"
         alt="major event image"
       />
-      <div className='text-center align-middle'>
-      <h1 className='text-center object-center text-8xl mt-60 font-extrabold font-stolzl'>Coming Soon</h1>
+      <div className="text-center align-middle">
+        <h1 className="text-center object-center text-8xl mt-60 font-extrabold font-Montserrat">
+          Coming Soon
+        </h1>
       </div>
-      
+
       {/* <Carousel
         autoPlay
         infiniteLoop

@@ -5,7 +5,7 @@ import React, { useRef, useState } from 'react';
 import Header from '../components/Header';
 import { minorevents, majorEvents } from '../data/events';
 import './../styles//events.module.css';
-import {Helmet} from 'react-helmet'
+import { Helmet } from 'react-helmet';
 export default function Events() {
   const scrollDown = (el) => {
     document.getElementById('blueScroll').scrollTo({
