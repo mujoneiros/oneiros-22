@@ -475,7 +475,8 @@ export const landingPageEvents = [
     name: 'Cosmos',
     image: '/majorEvents/cosmos.png',
     eventby: 'Cosmos',
-    description: '',
+    description:
+      'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
     date: '14th Oct',
     time: '7:20PM',
     link: '',
@@ -494,7 +495,8 @@ export const landingPageEvents = [
     name: 'Requiem',
     image: '/majorEvents/requiem.png',
     eventby: 'Requiem',
-    description: '',
+    description:
+      'Requiem is Oneiros’ very own Battle of Bands. Providing a chance for the top five qualifiers to compete for the coveted top spot, this event is bound to be a sight to behold (or rather say, hear).',
     date: '14th Oct',
     time: '6:15PM',
     link: '',
