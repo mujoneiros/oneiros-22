@@ -68,8 +68,8 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <InformationCircleIcon height={15} width={15} className="md:hidden" />
         <a href="https://linktr.ee/mujoneiros" target="_blank" rel="noreferrer">
+          <InformationCircleIcon height={15} width={15} className="md:hidden" />
           <div className="hidden md:block uppercase text-accent cursor-pointer neonText ">
             Register Now
           </div>
