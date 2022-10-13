@@ -43,9 +43,7 @@ export default function Header() {
           </Link>
           <Link href="/artist">
             <a className="items-center mx-2 inline-flex cursor-pointer">
-              <h3 className="ml-2 hidden flex-1 md:inline-flex cursor-pointer">
-                Artists
-              </h3>
+              <h3>Artists</h3>
             </a>
           </Link>
           <Link href="/sponsors">

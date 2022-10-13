@@ -29,6 +29,7 @@ export default function Artist() {
         layout="fill"
         className="-z-10 opacity-5 sd:opacity-0"
         alt="major event image"
+        objectFit="cover"
       />
       <div className="text-center align-middle">
         <h1 className="text-center object-center text-8xl mt-60 font-extrabold font-Montserrat">
