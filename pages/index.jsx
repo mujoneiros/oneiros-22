@@ -98,7 +98,9 @@ export default function Home() {
                 <div className="hidden absolute z-20 bottom-0 group-hover:flex items-start justify-center flex-col font-Montserrat px-4 pb-8 transition group-hover:animate-fade cursor-pointer">
                   <span className="capitalize text-base">{eventname.name}</span>
                   <span className="text-2xs font-extralight  ">
-                    {eventname.description}
+                    {eventname.description.length > 250
+                      ? eventname.description.substring(0, 249) + '...'
+                      : eventname.description}
                   </span>
                 </div>
               </div>

@@ -1,3 +1,4 @@
+import { InformationCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
@@ -37,22 +38,22 @@ export default function Header() {
         </div>
         <div className="flex justify-between md:w-2/5">
           <Link href="/events">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
+            <a className="items-center mx-2 inline-flex cursor-pointer text-2xs md:text-base">
               <h3>Events</h3>
             </a>
           </Link>
           <Link href="/artist">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
+            <a className="items-center mx-2 inline-flex cursor-pointer text-2xs md:text-base">
               <h3>Artists</h3>
             </a>
           </Link>
           <Link href="/sponsors">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
+            <a className="items-center mx-2 inline-flex cursor-pointer text-2xs md:text-base">
               <h3>Sponsors</h3>
             </a>
           </Link>
           {/* <Link href="/stalls">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
+            <a className="items-center mx-2 inline-flex cursor-pointer text-2xs md:text-base">
               <h3>Stalls</h3>
             </a>
           </Link> */}
@@ -62,11 +63,12 @@ export default function Header() {
             </a>
           </Link> */}
           <Link href="/faqs">
-            <a className="items-center mx-2 inline-flex cursor-pointer">
+            <a className="items-center mx-2 inline-flex cursor-pointer text-2xs md:text-base">
               <h3>FAQs</h3>
             </a>
           </Link>
         </div>
+        <InformationCircleIcon height={15} width={15} className="md:hidden" />
         <a href="https://linktr.ee/mujoneiros" target="_blank" rel="noreferrer">
           <div className="hidden md:block uppercase text-accent cursor-pointer neonText ">
             Register Now
