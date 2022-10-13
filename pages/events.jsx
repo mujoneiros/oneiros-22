@@ -95,16 +95,27 @@ export default function Events() {
                     <div className="text-grey1 text-lg md:text-3xl font-stolzl">
                       {majorEvent.time}
                     </div>
-                    <a
-                      href={majorEvent.link}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-block w-full"
-                    >
-                      <button className="w-full h-20 p-4 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center transition delay-75 hover:ease-in-out ">
-                        Register
-                      </button>
-                    </a>
+                    {majorEvent.link == 'grey' ? (
+                      <a className="inline-block w-full brightness-50">
+                        {/* <button
+                          className="w-full h-20 p-4 border-2 border-white mb-3  flex items-center justify-center transition delay-75 "
+                          disabled
+                        >
+                          Register
+                        </button> */}
+                      </a>
+                    ) : (
+                      <a
+                        href={majorEvent.link}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-block w-full"
+                      >
+                        <button className="w-full h-20 p-4 border-2 border-white mb-3 hover:bg-white hover:text-black flex items-center justify-center transition delay-75 hover:ease-in-out ">
+                          Register
+                        </button>
+                      </a>
+                    )}
                   </div>
                 </div>
               ))}

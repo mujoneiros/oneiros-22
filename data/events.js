@@ -447,7 +447,17 @@ export const majorEvents = [
       'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
     date: '14th Oct',
     time: '7:20PM',
-    link: '',
+    link: 'grey',
+  },
+  {
+    name: 'Requiem',
+    image: '/majorEvents/requiem.png',
+    eventby: 'Requiem',
+    description:
+      'Requiem is Oneiros’ very own Battle of Bands. Providing a chance for the top five qualifiers to compete for the coveted top spot, this event is bound to be a sight to behold (or rather say, hear).',
+    date: '14th Oct',
+    time: '6:15PM',
+    link: 'grey',
   },
   {
     name: 'Destival',
@@ -458,16 +468,6 @@ export const majorEvents = [
     date: '15th Oct',
     time: '7:30PM',
     link: 'https://unstop.com/p/destival-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457125',
-  },
-  {
-    name: 'Requiem',
-    image: '/majorEvents/requiem.png',
-    eventby: 'Requiem',
-    description:
-      'Requiem is Oneiros’ very own Battle of Bands. Providing a chance for the top five qualifiers to compete for the coveted top spot, this event is bound to be a sight to behold (or rather say, hear).',
-    date: '14th Oct',
-    time: '6:15PM',
-    link: '',
   },
 ];
 export const landingPageEvents = [
@@ -482,16 +482,6 @@ export const landingPageEvents = [
     link: '',
   },
   {
-    name: 'Destival',
-    image: '/majorEvents/destival.png',
-    eventby: 'Destival',
-    description:
-      'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
-    date: '15th Oct',
-    time: '7:30PM',
-    link: 'https://unstop.com/p/destival-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457125',
-  },
-  {
     name: 'Requiem',
     image: '/majorEvents/requiem.png',
     eventby: 'Requiem',
@@ -500,5 +490,15 @@ export const landingPageEvents = [
     date: '14th Oct',
     time: '6:15PM',
     link: '',
+  },
+  {
+    name: 'Destival',
+    image: '/majorEvents/destival.png',
+    eventby: 'Destival',
+    description:
+      'Destival is a festival of dance. It is a platform for all the dancers to showcase their talent and to bring out the best in them. It is a platform for all the dancers to showcase their talent and to bring out the best in them.',
+    date: '15th Oct',
+    time: '7:30PM',
+    link: 'https://unstop.com/p/destival-group-dance-competition-oneiros-22-revive-manipal-university-mu-jaipur-457125',
   },
 ];

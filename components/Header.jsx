@@ -67,9 +67,11 @@ export default function Header() {
             </a>
           </Link>
         </div>
-        <div className="hidden md:block uppercase text-accent cursor-pointer neonText ">
-          Register Now
-        </div>
+        <a href="https://linktr.ee/mujoneiros" target="_blank" rel="noreferrer">
+          <div className="hidden md:block uppercase text-accent cursor-pointer neonText ">
+            Register Now
+          </div>
+        </a>
       </header>
     </div>
   );
