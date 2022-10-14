@@ -41,7 +41,7 @@ export default function Header() {
   return (
     <div>
       <header
-        className="fixed top-0 flex sm:px-4 min-w-full text-white z-1 justify-between md:justify-around items-center h-14 z-50 pt-4 px-4"
+        className="fixed top-0 flex sm:px-4 min-w-full text-white z-1 justify-around items-center h-14 z-50 pt-4 px-4"
         style={{
           background: `rgba(4, 7, 19, ${backgroundTransparacy})`,
           padding: `${padding}px 0px`,
