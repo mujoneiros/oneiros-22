@@ -442,11 +442,11 @@ export const majorEvents = [
   {
     name: 'Cosmos',
     image: '/majorEvents/cosmos.png',
-    eventby: 'Cosmos',
+    eventby: 'D-Club & Department of Fashon Design',
     description:
       'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
-    date: '14th Oct',
-    time: '7:20PM',
+    date: '15th Oct',
+    time: '6:00PM',
     link: 'grey',
   },
   {
@@ -474,12 +474,12 @@ export const landingPageEvents = [
   {
     name: 'Cosmos',
     image: '/majorEvents/cosmos.png',
-    eventby: 'Cosmos',
+    eventby: 'D-Club & Department of Fashon Design',
     description:
       'A festival to enjoy the amalgamation and diversity of culture and universe. Entering through the harmonious realm of creativity and talent is what makes us a part of this universe.',
-    date: '14th Oct',
-    time: '7:20PM',
-    link: '',
+    date: '15th Oct',
+    time: '6:00PM',
+    link: 'grey',
   },
   {
     name: 'Requiem',
