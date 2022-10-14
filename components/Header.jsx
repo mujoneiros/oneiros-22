@@ -1,15 +1,49 @@
 import { InformationCircleIcon } from '@heroicons/react/24/solid';
 import Image from 'next/image';
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import oneirosLogo from '../assets/images/OneirosLogo.png';
 import onoLogo from '../assets/images/onoLogo.jpg';
 
 export default function Header() {
   // const navItems = [{ name: 'Events', link: '/events' }];
+  const [clientWindowHeight, setClientWindowHeight] = useState('');
+
+  const [backgroundTransparacy, setBackgroundTransparacy] = useState(0);
+  const [padding, setPadding] = useState(30);
+  const [boxShadow, setBoxShadow] = useState(0);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  });
+
+  const handleScroll = () => {
+    setClientWindowHeight(window.scrollY);
+  };
+
+  useEffect(() => {
+    let backgroundTransparacyVar = clientWindowHeight / 600;
+
+    if (backgroundTransparacyVar < 1) {
+      let paddingVar = 30 - backgroundTransparacyVar * 20;
+      let boxShadowVar = backgroundTransparacyVar * 0.1;
+      setBackgroundTransparacy(backgroundTransparacyVar);
+      setPadding(paddingVar);
+      setBoxShadow(boxShadowVar);
+    }
+  }, [clientWindowHeight]);
+
   return (
     <div>
-      <header className="fixed top-0 flex sm:px-4 min-w-full bg-transparent text-white z-1 justify-between md:justify-around items-center h-14 z-50 pt-4 px-4">
+      <header
+        className="fixed top-0 flex sm:px-4 min-w-full text-white z-1 justify-between md:justify-around items-center h-14 z-50 pt-4 px-4"
+        style={{
+          background: `rgba(4, 7, 19, ${backgroundTransparacy})`,
+          padding: `${padding}px 0px`,
+          boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
+        }}
+      >
         <div className="relative z-2 h-10 pt-2 ">
           <Link href="/" passHref={true}>
             <a className="hidden md:inline-block">
