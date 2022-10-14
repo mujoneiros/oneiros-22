@@ -2,13 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import Header from '../components/Header';
 import FAQsDropDown from '../components/FAQsDropDown';
-import {Helmet} from 'react-helmet'
+import Head from 'next/head';
+
 export default function Faqs() {
   return (
     <div style={{ backgroundColor: 'rgb(4,7,19)' }}>
-      <Helmet>
+      <Head>
         <title>FAQs</title>
-      </Helmet>
+      </Head>
       <Header />
       <br />
       <br />
@@ -20,7 +21,16 @@ export default function Faqs() {
           'box-shadow': '0px -5px 100px rgb(4,7,19)',
         }}
       >
-        <h2 style={{ 'font-size': '3rem', color: '#3EDCF2' ,"padding-bottom":"20px"}} className = "text-xl sm:text-base">FAQs</h2>
+        <h2
+          style={{
+            'font-size': '3rem',
+            color: '#3EDCF2',
+            'padding-bottom': '20px',
+          }}
+          className="text-xl sm:text-base"
+        >
+          FAQs
+        </h2>
 
         <div
           style={{
@@ -28,7 +38,7 @@ export default function Faqs() {
             'box-shadow': '0px -5px 100px rgb(4,7,19)',
           }}
         >
-          <FAQsDropDown/>
+          <FAQsDropDown />
         </div>
       </div>
     </div>

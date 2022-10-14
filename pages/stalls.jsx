@@ -1,8 +1,8 @@
+import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 import Header from '../components/Header';
 // import { stalls } from '../data/stalls';
-import { Helmet } from 'react-helmet';
 export default function Stalls() {
   const stalls = [
     {
@@ -46,11 +46,10 @@ export default function Stalls() {
     },
   ];
   return (
-    
     <div className="">
-      <Helmet>
+      <Head>
         <title>Stalls</title>
-      </Helmet>
+      </Head>
       <Header />
       {/* <nav className="fixed h-full w-1/3 text-white text-center shadow-sm shadow-primaryWhite">
         <h1 className="text-6xl pt-40 ">Stalls</h1>
@@ -63,10 +62,13 @@ export default function Stalls() {
           consequuntur blanditiis harum adipisci!
         </p>
       </nav> */}
-      <h1 style={{ color: '#A5C1D1' }} className="pt-40 text-center mt-6 text-6xl">
+      <h1
+        style={{ color: '#A5C1D1' }}
+        className="pt-40 text-center mt-6 text-6xl"
+      >
         Stalls
       </h1>
-      <main className=" pt-20 grid grid-cols-3 flex justify-center wrap flex-wrap">
+      <main className=" pt-20 grid grid-cols-3 justify-center wrap flex-wrap">
         {stalls.map((stall, _i) => (
           <div key={_i} className="flex justify-center items-center">
             <div className="rounded-full h-40 w-40 relative hover:bg-primaryWhite hover:transition ease-in-out delay-150">
@@ -78,9 +80,8 @@ export default function Stalls() {
               />
             </div>
           </div>
-          ))} 
-          </main>
-      
+        ))}
+      </main>
     </div>
   );
 }

@@ -14,6 +14,10 @@ export default function Header() {
   const [boxShadow, setBoxShadow] = useState(0);
 
   useEffect(() => {
+    document.body.classList.add('scrollbar-hide');
+  });
+
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   });

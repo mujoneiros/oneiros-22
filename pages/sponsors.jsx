@@ -1,11 +1,11 @@
 import { ArrowUpRightIcon } from '@heroicons/react/24/solid';
+import Head from 'next/head';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 import Header from '../components/Header';
 import SponsorImage from '../components/SponsorImage';
 import { sponsors } from '../data/sponsors';
-import { Helmet } from 'react-helmet';
 export default function Sponsors() {
   const currentSpons = [
     {
@@ -97,9 +97,9 @@ export default function Sponsors() {
   ];
   return (
     <div style={{ backgroundColor: '#040613' }} className="">
-      <Helmet>
+      <Head>
         <title>Sponsors</title>
-      </Helmet>
+      </Head>
       <Header />
       <br />
       <br />

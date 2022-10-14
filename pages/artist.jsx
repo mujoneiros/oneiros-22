@@ -1,16 +1,13 @@
 import Image from 'next/image';
 import React from 'react';
 import Header from '../components/Header';
-import jubin from '../assets/images/artists/jubin.jpg';
 import { ArrowUpIcon, ArrowUpRightIcon } from '@heroicons/react/24/solid';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import reviveono from '../assets/images/reviveono.png';
-import onoLogo from '../assets/images/onoLogo.jpg';
 import CustomCarousel from '../components/CustomCarousel';
 import Link from 'next/link';
-import Logo from '../assets/svgs/OneirosLogo.svg';
-import { Helmet } from 'react-helmet';
+import Head from 'next/head';
 export default function Artist() {
   const goToTop = () => {
     window.scrollTo({
@@ -20,9 +17,9 @@ export default function Artist() {
   };
   return (
     <div className="">
-      <Helmet>
+      <Head>
         <title>Artists</title>
-      </Helmet>
+      </Head>
       <Header />
 
       <div className="">

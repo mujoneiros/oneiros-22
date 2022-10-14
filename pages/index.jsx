@@ -12,6 +12,7 @@ import { landingPageEvents } from '../data/events';
 import { ArrowUpIcon, BeakerIcon, SunIcon } from '@heroicons/react/24/solid';
 import Link from 'next/link';
 import CustomCarousel from '../components/CustomCarousel';
+import { useEffect } from 'react';
 
 export default function Home() {
   const goToTop = () => {
@@ -20,6 +21,7 @@ export default function Home() {
       behavior: 'smooth',
     });
   };
+
   return (
     <div>
       <Head>
@@ -28,7 +30,7 @@ export default function Home() {
       </Head>
       <Header />
 
-      <div className="md:hidden mt-20">
+      <div className="md:hidden mt-20 ">
         <Image
           src={'/bg-landing-ono.png'}
           width={700}
