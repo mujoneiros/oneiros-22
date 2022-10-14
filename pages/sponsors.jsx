@@ -11,7 +11,7 @@ export default function Sponsors() {
     {
       image: '/sponsors/ubon.png',
       type: 'title-sponsor',
-      link: 'https://www.fernhotels.com/',
+      link: 'https://ubon.in/',
     },
     {
       image: '/sponsors/PBN_Whitw.png',
@@ -32,7 +32,7 @@ export default function Sponsors() {
     {
       image: '/sponsors/sas.png',
       type: 'entertainment',
-      link: 'dulux.in',
+      link: 'https://www.facebook.com/sasdunes/about_details',
     },
     {
       image: '/sponsors/tribevibelogo.png',
@@ -70,9 +70,9 @@ export default function Sponsors() {
       link: 'https://www.lakmeindia.com/',
     },
     {
-      image: '/sponsors/thelordpizza.png',
+      image: '/sponsors/thelordplaza.png',
       type: 'hospitality',
-      link: '',
+      link: 'https://www.lordshotels.com/hotels/lords-plaza-jaipur',
     },
     {
       image: '/sponsors/Aperture.png',
@@ -384,19 +384,19 @@ export default function Sponsors() {
           {currentSpons.map((sponsor, _i) =>
             sponsor.type === 'virtual-gaming' ? (
               <div key={_i} className="flex justify-center items-center">
-                <Link href={sponsor.link}>
-                  <a target={'_blank'}>
-                    <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
-                      <Image
-                        src={sponsor.image}
-                        layout="fill"
-                        objectFit="contain"
-                        alt="sponsor image"
-                        // style={{ filter: 'brightness(0) invert(1)' }}
-                      />
-                    </div>
-                  </a>
-                </Link>
+                {/* <Link href={sponsor.link}>
+                  <a target={'_blank'}> */}
+                <div className="rounded-full h-40 w-40 relative hover:scale-125 hover:transition ease-in-out delay-150 m-10">
+                  <Image
+                    src={sponsor.image}
+                    layout="fill"
+                    objectFit="contain"
+                    alt="sponsor image"
+                    // style={{ filter: 'brightness(0) invert(1)' }}
+                  />
+                </div>
+                {/* </a>
+                </Link> */}
               </div>
             ) : (
               ''
