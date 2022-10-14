@@ -31,7 +31,7 @@ export default function Faqs(props) {
         content: `All events will be conducted inside the University campus.`,
       },
       {
-        title: 'Is there any sort of transport faility available?',
+        title: 'Is there any sort of transport facility available?',
         content: `No, make sure to acquire tranport before attending the fest.`,
       },
       {

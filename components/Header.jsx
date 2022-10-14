@@ -48,6 +48,13 @@ export default function Header() {
               </h3>
             </a>
           </Link>
+          <Link href="/stalls">
+            <a className="items-center mx-2 inline-flex cursor-pointer">
+              <h3 className="ml-2 hidden flex-1 md:inline-flex cursor-pointer">
+                Stalls
+              </h3>
+            </a>
+          </Link>
           <Link href="/sponsors">
             <a className="items-center mx-2 inline-flex cursor-pointer">
               <h3>Sponsors</h3>
