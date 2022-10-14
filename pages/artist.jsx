@@ -57,9 +57,9 @@ export default function Artist() {
                     Indian DJ/Producer signed on Armada Music, Cr2 Records,
                     Starter Records And one of the very few Indian DJs to have
                     played at the renowned Ministry of Sound Club, London.
-                    Played at the World's biggest and No.1 ranked Festival in
-                    the world - Ultra Music Festival, Miami Worked at one of the
-                    top dance music labels in the industry - Enhanced music
+                    Played at the World&apos;s biggest and No.1 ranked Festival
+                    in the world - Ultra Music Festival, Miami Worked at one of
+                    the top dance music labels in the industry - Enhanced music
                   </div>
                   {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
                     View Artist
@@ -88,8 +88,8 @@ export default function Artist() {
                 </div>
                 <div className="hidden w-3/4 md:flex flex-col justify-center">
                   <div className="w-3/4 font-Jost font-light text-left text-2xl">
-                    The term Oneiros was officially used to personify dreams by
-                    ancient Greeks. However, Manipal University Jaipur takes the
+                    A talented vocalist and guitarist with a powerful voice
+                    making waves in the local music scene.
                   </div>
                   {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
                     View Artist
