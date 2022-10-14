@@ -2,7 +2,7 @@ import React from 'react';
 import Faq from 'react-faq-component';
 export default function Faqs(props) {
   const data = {
-    title: 'Frequently Asked Questions',
+    // title: 'Frequently Asked Questions',
     rows: [
       {
         title: 'Which artist will perform at Oneiros 2022?',
@@ -31,7 +31,7 @@ export default function Faqs(props) {
         content: `All events will be conducted inside the University campus.`,
       },
       {
-        title: 'Is there any sort of transport faility available?',
+        title: 'Is there any sort of transport facility available?',
         content: `No, make sure to acquire tranport before attending the fest.`,
       },
       {
@@ -57,13 +57,22 @@ export default function Faqs(props) {
     bgColor: 'rgb(4,7,19)',
     titleTextColor: 'white',
     rowTitleColor: 'white',
-    rowTitleTextSize: '25px',
-    rowContentTextSize:'20px',
-    rowContentPaddingTop: '35px',
+    rowTitleTextSize: '23px',
+    rowContentTextSize:'19px',
+    rowContentPaddingTop: '10px',
     rowContentColor: '#c3c8c9',
     arrowColor: 'white',
   };
-
+  const stylesMobile = {
+    bgColor: 'rgb(4,7,19)',
+    titleTextColor: 'white',
+    rowTitleColor: 'white',
+    rowTitleTextSize: '15px',
+    rowContentTextSize:'14px',
+    rowContentPaddingTop: '13px',
+    rowContentColor: '#c3c8c9',
+    arrowColor: 'white',
+  };
   const config = {
     animate: true,
     // arrowIcon: "V",
@@ -71,7 +80,7 @@ export default function Faqs(props) {
   };
   return (
     <div>
-      <Faq data={data} styles={styles} config={config} />
+      <Faq data={data} styles={stylesMobile} config={config}/>
     </div>
   );
 }

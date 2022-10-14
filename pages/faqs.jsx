@@ -20,14 +20,15 @@ export default function Faqs() {
           'box-shadow': '0px -5px 100px rgb(4,7,19)',
         }}
       >
-        <h2 style={{ 'font-size': '3rem', color: '#3EDCF2' }}>FAQs</h2>
+        <h2 style={{ 'font-size': '3rem', color: '#3EDCF2' ,"padding-bottom":"20px"}} className = "text-xl sm:text-base">FAQs</h2>
+
         <div
           style={{
             backgroundColor: 'rgb(4,7,19)',
             'box-shadow': '0px -5px 100px rgb(4,7,19)',
           }}
         >
-          <FAQsDropDown />
+          <FAQsDropDown/>
         </div>
       </div>
     </div>
