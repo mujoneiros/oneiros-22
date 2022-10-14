@@ -24,158 +24,149 @@ export default function Artist() {
         <title>Artists</title>
       </Helmet>
       <Header />
-      <Image
-        src={'/OneirosLogo.png'}
-        layout="fill"
-        className="-z-10 opacity-5 sd:opacity-0"
-        alt="major event image"
-        objectFit="cover"
-      />
-      <div className="text-center align-middle">
-        <h1 className="text-center object-center text-8xl mt-60 font-extrabold font-Montserrat">
-          Coming Soon
-        </h1>
-      </div>
 
-      {/* <Carousel
-        autoPlay
-        infiniteLoop
-        interval="4000"
-        showIndicators={false}
-        showStatus={false}
-        showThumbs={false}
-      >
-        <div className="w-screen h-screen">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            loading="lazy"
-            src="/placeholder-artist.jpg"
-            alt="banner 3"
-          />
-          <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
-            <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
-              <div className=" flex flex-col items-center justify-center">
-                <div className=" flex flex-col text-6xl font-stolzl mx-32">
-                  LIFAFA
-                  <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
-                    14TH October
-                  </span>
+      <div className="">
+        <Carousel
+          autoPlay
+          infiniteLoop
+          interval="4000"
+          showIndicators={false}
+          showStatus={false}
+          showThumbs={false}
+        >
+          <div className=" md:w-screen md:h-screen">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+              src="/aerreo3.jpg"
+              alt="banner 3"
+            />
+            <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
+              <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
+                <div className=" flex flex-col items-center justify-center">
+                  <div className=" flex flex-col text-6xl font-stolzl mx-32">
+                    AERREO
+                    <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
+                      14TH October
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="hidden w-3/4 md:flex flex-col justify-center">
-                <div className="w-3/4 font-Jost font-light text-left text-2xl">
-                  The term Oneiros was officially used to personify dreams by
-                  ancient Greeks. However, Manipal University Jaipur takes the
-                </div>
-                <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
-                  View Artist
+                <div className="hidden w-3/4 md:flex flex-col justify-center">
+                  <div className="w-3/4 font-Jost font-light text-left md:text-xl">
+                    Indian DJ/Producer signed on Armada Music, Cr2 Records,
+                    Starter Records And one of the very few Indian DJs to have
+                    played at the renowned Ministry of Sound Club, London.
+                    Played at the World's biggest and No.1 ranked Festival in
+                    the world - Ultra Music Festival, Miami Worked at one of the
+                    top dance music labels in the industry - Enhanced music
+                  </div>
+                  {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
+                    View Artist
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <div className="w-screen h-screen">
-          <Image
-            layout="fill"
-            objectFit="cover"
-            loading="lazy"
-            src="/placeholder-artist.jpg"
-            alt="banner 3"
-          />
-          <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
-            <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
-              <div className=" flex flex-col items-center justify-center">
-                <div className=" flex flex-col text-6xl font-stolzl mx-32">
-                  LIFAFA
-                  <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
-                    14TH October
-                  </span>
+          <div className="w-screen h-screen">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+              src="/navjot.jpg"
+              alt="banner 3"
+            />
+            <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
+              <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
+                <div className=" flex flex-col items-center justify-center">
+                  <div className=" flex flex-col text-6xl font-stolzl mx-32">
+                    NAVJOT AHUJA
+                    <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
+                      14TH October
+                    </span>
+                  </div>
                 </div>
-              </div>
-              <div className="hidden w-3/4 md:flex flex-col justify-center">
-                <div className="w-3/4 font-Jost font-light text-left text-2xl">
-                  The term Oneiros was officially used to personify dreams by
-                  ancient Greeks. However, Manipal University Jaipur takes the
-                </div>
-                <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
-                  View Artist
+                <div className="hidden w-3/4 md:flex flex-col justify-center">
+                  <div className="w-3/4 font-Jost font-light text-left text-2xl">
+                    The term Oneiros was officially used to personify dreams by
+                    ancient Greeks. However, Manipal University Jaipur takes the
+                  </div>
+                  {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
+                    View Artist
+                  </div> */}
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </Carousel>
+        </Carousel>
 
-      <div className="bg-artist">
-        <div className=" h-screen flex flex-col items-center justify-around pt-20">
-          <span className="inline-block text-8xl font-freak">3 DAYS</span>
-          <span
-            className="inline-block text-8xl font-freak"
-            style={{ letterSpacing: '2vw' }}
-          >
-            20+ ARTISTS
-          </span>
-          <div className="uppercase bg-white bg-opacity-20 py-2.5 px-8 cursor-pointer text-md">
-            View Artist
-          </div>
-          <div className="h-40 w-80 relative">
-            <Image
-              className=""
-              layout="fill"
-              objectFit="contain"
-              src={reviveono}
-              alt={reviveono}
-            />
-          </div>
-        </div>
-      </div>
-      <div>
-        
-      </div>
-      <CustomCarousel />
-      <footer className="bg-footer relative">
-        <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">
-          <div className="relative w-[60rem] h-96 ">
-            <Image
-              src={'/comeandexperience.png'}
-              layout="fill"
-              objectFit="contain"
-              alt="come and experience"
-            />
-          </div>
-
-          <Link href={'/events'}>
-            <button className="uppercase mr-auto mt-6 bg-white bg-opacity-40 py-4 px-8 cursor-pointer mx-auto place-self-center col-span-3">
-              Explore Events
-            </button>
-          </Link>
-        </div>
-        <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
-          <Image
-            src={'/onorevive1416.png'}
-            height={100}
-            width={200}
-            alt="revive"
-          />
-          <div className="h-40 w-40 flex flex-col justify-center items-center">
-            <div
-              className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
-              onClick={goToTop}
+        <div className="bg-artist">
+          <div className=" h-screen flex flex-col items-center justify-around pt-20">
+            <span className="inline-block text-8xl font-freak">3 DAYS</span>
+            <span
+              className="inline-block text-4xl md:text-8xl font-freak"
+              style={{ letterSpacing: '2vw' }}
             >
-              <ArrowUpIcon className="text-accent h-5 w-5" />
-            </div>
-            GO TO TOP
-          </div>
-          <div className="font-Montserrat">
-            <h3 className="text-lg font-bold">Latest updates on</h3>
-            <div className="h-5 w-5 text-sm">
-              instagram
-              <span className="">/mujoniros</span>
+              20+ ARTISTS
+            </span>
+            {/* <div className="uppercase bg-white bg-opacity-20 py-2.5 px-8 cursor-pointer text-md">
+              View Artist
+            </div> */}
+            <div className="h-40 w-80 relative">
+              <Image
+                className=""
+                layout="fill"
+                objectFit="contain"
+                src={reviveono}
+                alt={reviveono}
+              />
             </div>
           </div>
         </div>
-      </footer> */}
+        <CustomCarousel />
+        <footer className="bg-footer relative">
+          <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">
+            <div className="relative w-[100vw] md:w-[60rem] h-96 ">
+              <Image
+                src={'/comeandexperience.png'}
+                layout="fill"
+                objectFit="contain"
+                alt="come and experience"
+              />
+            </div>
+
+            <Link href={'/events'}>
+              <button className="uppercase mr-auto mt-6 bg-white bg-opacity-40 py-4 px-8 cursor-pointer mx-auto place-self-center col-span-3">
+                Explore Events
+              </button>
+            </Link>
+          </div>
+          <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
+            <Image
+              src={'/onorevive1416.png'}
+              height={100}
+              width={200}
+              alt="revive"
+            />
+            <div className="h-40 w-40 flex flex-col justify-center items-center">
+              <div
+                className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
+                onClick={goToTop}
+              >
+                <ArrowUpIcon className="text-accent h-5 w-5" />
+              </div>
+              GO TO TOP
+            </div>
+            <div className="font-Montserrat hidden md:block">
+              <h3 className="text-lg font-bold">Latest updates on</h3>
+              <div className="h-5 w-5 text-sm">
+                instagram
+                <span className="">/mujoniros</span>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
     </div>
   );
 }
