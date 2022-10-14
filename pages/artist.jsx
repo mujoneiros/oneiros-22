@@ -124,45 +124,41 @@ export default function Artist() {
           </div>
         </div>
         <CustomCarousel />
-        <footer className="bg-footer relative">
-          <div className="w-full h-screen bg-opacity-10 flex flex-col items-center justify-center backdrop-blur-sm ">
-            <div className="relative w-[100vw] md:w-[60rem] h-96 ">
-              <Image
-                src={'/comeandexperience.png'}
-                layout="fill"
-                objectFit="contain"
-                alt="come and experience"
-              />
-            </div>
-
-            <Link href={'/events'}>
-              <button className="uppercase mr-auto mt-6 bg-white bg-opacity-40 py-4 px-8 cursor-pointer mx-auto place-self-center col-span-3">
-                Explore Events
-              </button>
-            </Link>
-          </div>
-          <div className="h-1/4 w-full bg-transparent bg-opacity-30  flex justify-around items-center absolute">
+        <footer className="h-1/4 w-full bg-transparent bg-opacity-30 flex justify-around items-center absolute">
+          <div className="hidden md:block">
             <Image
               src={'/onorevive1416.png'}
               height={100}
               width={200}
               alt="revive"
+              className=""
             />
-            <div className="h-40 w-40 flex flex-col justify-center items-center">
-              <div
-                className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center"
-                onClick={goToTop}
-              >
-                <ArrowUpIcon className="text-accent h-5 w-5" />
-              </div>
-              GO TO TOP
+          </div>
+          <div className="h-40 w-40 flex flex-col justify-center items-center text-sm md:text-base">
+            <div
+              className="rounded-full h-10 w-10 bg-primaryBlack flex justify-center items-center "
+              onClick={goToTop}
+            >
+              <ArrowUpIcon className="text-accent h-5 w-5" />
             </div>
-            <div className="font-Montserrat hidden md:block">
-              <h3 className="text-lg font-bold">Latest updates on</h3>
-              <div className="h-5 w-5 text-sm">
-                instagram
-                <span className="">/mujoniros</span>
-              </div>
+            GO TO TOP
+          </div>
+          <div className="font-Montserrat">
+            <h3 className="hidden md:inline text-lg font-bold">
+              Latest updates on
+            </h3>
+            <div className=" h-5 w-20 text-sm ">
+              <a
+                href="https://www.instagram.com/mujoneiros/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <Image src={'/insta.png'} height={20} width={20} alt="insta" />
+                <span className="hidden md:inline cursor-pointer">
+                  /mujoniros
+                </span>
+              </a>
             </div>
           </div>
         </footer>

@@ -164,8 +164,17 @@ export default function Home() {
               Latest updates on
             </h3>
             <div className=" h-5 w-20 text-sm ">
-              <Image src={'/insta.png'} height={20} width={20} alt="insta" />
-              <span className="hidden md:inline">/mujoniros</span>
+              <a
+                href="https://www.instagram.com/mujoneiros/?igshid=YmMyMTA2M2Y%3D"
+                target="_blank"
+                rel="noreferrer"
+                className="cursor-pointer"
+              >
+                <Image src={'/insta.png'} height={20} width={20} alt="insta" />
+                <span className="hidden md:inline cursor-pointer">
+                  /mujoniros
+                </span>
+              </a>
             </div>
           </div>
         </footer>
