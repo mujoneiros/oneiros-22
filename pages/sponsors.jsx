@@ -46,12 +46,17 @@ export default function Sponsors() {
       link: 'https://www.ambashakti.com/',
     },
     {
+      image: '/sponsors/RiceCraft.png',
+      type: 'powered-by',
+      link: 'https://ricekraft.com/',
+    },
+    {
       image: '/sponsors/moodindigo.png',
       type: 'talent-showcase',
       link: 'https://www.ambashakti.com/',
     },
     {
-      image: '/sponsors/punjabibynature.png',
+      image: '/sponsors/PBN_Whitw.png',
       type: 'powered-by',
       link: 'http://youvaworld.com/',
     },
@@ -76,7 +81,7 @@ export default function Sponsors() {
       link: 'https://www.airtel.in/',
     },
     {
-      image: '/sponsors/rocky.png',
+      image: '/sponsors/rocky logo.png',
       type: 'virtual-gaming',
       link: 'https://www.airtel.in/',
     },
