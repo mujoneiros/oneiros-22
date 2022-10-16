@@ -31,6 +31,41 @@ export default function Artist() {
           showStatus={false}
           showThumbs={false}
         >
+          <div className="w-screen h-screen">
+            <Image
+              layout="fill"
+              objectFit="cover"
+              loading="lazy"
+              src="/darshanrawal.jpg"
+              alt="banner 3"
+            />
+            <div className="absolute bottom-0 w-full h-60 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-60 backdrop-brightness-50 items-center">
+              <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
+                <div className=" flex flex-col items-center justify-center">
+                  <div className=" flex flex-col text-6xl font-stolzl mx-32">
+                    Darshan Rawal
+                    <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
+                      16TH October
+                    </span>
+                  </div>
+                </div>
+                <div className="hidden w-3/4 md:flex flex-col justify-center">
+                  <div className="w-3/4 font-Jost font-light text-left text-xl">
+                    Darshan Raval, a pehnomenal singer, songwriter and composer,
+                    has made a position for himself in in the bollywood music
+                    industry. He has given some of the most beautiful songs and
+                    not only won numerous awards, but also people's hearts. With
+                    a huge fan following, and his songs loved all round India,
+                    Darshan Raval has become one of the most well known singers
+                    of the nation.
+                  </div>
+                  {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
+                    View Artist
+                  </div> */}
+                </div>
+              </div>
+            </div>
+          </div>
           <div className=" md:w-screen md:h-screen">
             <Image
               layout="fill"
