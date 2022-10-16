@@ -43,7 +43,7 @@ export default function Artist() {
               <div className="mx-auto flex flex-row justify-center items-center mt-16 space-x-28">
                 <div className=" flex flex-col items-center justify-center">
                   <div className=" flex flex-col text-6xl font-stolzl mx-32">
-                    Darshan Rawal
+                    Darshan Raval
                     <span className="uppercase text-xl w-full inline-block text-accent tracking-[0.26vw] text-center pl-1">
                       16TH October
                     </span>
