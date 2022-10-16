@@ -54,10 +54,10 @@ export default function Artist() {
                     Darshan Raval, a pehnomenal singer, songwriter and composer,
                     has made a position for himself in in the bollywood music
                     industry. He has given some of the most beautiful songs and
-                    not only won numerous awards, but also people's hearts. With
-                    a huge fan following, and his songs loved all round India,
-                    Darshan Raval has become one of the most well known singers
-                    of the nation.
+                    not only won numerous awards, but also people&apos;s hearts.
+                    With a huge fan following, and his songs loved all round
+                    India, Darshan Raval has become one of the most well known
+                    singers of the nation.
                   </div>
                   {/* <div className="uppercase mr-auto mt-6 bg-white bg-opacity-20 py-2 px-4 cursor-pointer hover:">
                     View Artist
